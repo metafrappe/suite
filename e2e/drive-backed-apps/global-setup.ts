@@ -17,7 +17,7 @@ async function cleanupPreviousRun(api: APIRequestContext): Promise<void> {
 		const { run_id } = JSON.parse(readFileSync(statePath, "utf8")) as {
 			run_id: string;
 		};
-		await api.post("/api/method/suite.drive.e2e_api.cleanup_users", {
+		await api.post("/api/method/suite.suite_drive.e2e_api.cleanup_users", {
 			form: { run_id },
 		});
 	} catch {
@@ -50,7 +50,7 @@ export default async function globalSetup(config: FullConfig): Promise<void> {
 	const runId = `${Date.now().toString(36)}-${process.pid}`;
 	const userCount = Math.max(1, config.workers) * 2;
 	const response = await api.post(
-		"/api/method/suite.drive.e2e_api.provision_users",
+		"/api/method/suite.suite_drive.e2e_api.provision_users",
 		{
 			form: {
 				run_id: runId,

@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2026-08-24 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "property_section",
+  "entity",
+  "property_column_break",
+  "ns",
+  "prop_name",
+  "value_section",
+  "value_xml"
+ ],
+ "fields": [
+  {
+   "description": "A WebDAV dead property (RFC 4918 §4.4) — client-stored metadata PROPPATCHed onto an entity. One row per (entity, namespace, name); rows follow the entity through MOVE, are cloned by COPY and wiped when it is deleted. All protocol access goes through the WebDAV engine, not this form.",
+   "fieldname": "property_section",
+   "fieldtype": "Section Break",
+   "label": "Property"
+  },
+  {
+   "description": "The File this property is attached to.",
+   "fieldname": "entity",
+   "fieldtype": "Link",
+   "label": "Entity",
+   "options": "File",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "property_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Namespace URI qualifying the property name (e.g. urn:schemas-microsoft-com:); empty for the null namespace.",
+   "fieldname": "ns",
+   "fieldtype": "Data",
+   "label": "Namespace",
+   "length": 255
+  },
+  {
+   "description": "The property's local name within the namespace.",
+   "fieldname": "prop_name",
+   "fieldtype": "Data",
+   "label": "Property Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value_section",
+   "fieldtype": "Section Break",
+   "label": "Value"
+  },
+  {
+   "description": "The full serialized property element, namespace declarations included, so client XML round-trips byte-faithfully (prefixes may be rewritten; namespace URIs are preserved). Capped at 64 KB by the engine.",
+   "fieldname": "value_xml",
+   "fieldtype": "Long Text",
+   "ignore_xss_filter": 1,
+   "label": "Value XML"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-08-25 13:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Suite Drive",
+ "name": "Drive DAV Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

@@ -58,7 +58,7 @@ test("guest_subscribe validates structured proof before joining", async () => {
 	assert.deepEqual(fixture.joinedRooms, ["guest:guest_12345"]);
 	assert.equal(
 		fixture.requests[0].url,
-		"/api/v2/method/suite.meet.api.meeting.validate_guest_session",
+		"/api/v2/method/suite.suite_meet.api.meeting.validate_guest_session",
 	);
 	assert.equal(fixture.requests[0].url.includes("private-proof"), false);
 	assert.deepEqual(fixture.requests[0].params, {});

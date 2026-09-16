@@ -72,7 +72,7 @@ test("expands a folder inline in the list view and moves a subfile into another 
 	await childRow.click();
 	await expect(owner.page).toHaveURL(new RegExp(`/drive/f/${child.name}`));
 	const refreshedSubtree = owner.page.waitForResponse(
-		(response) => response.url().includes("suite.drive.api.list.files") && response.url().includes(source.name),
+		(response) => response.url().includes("suite.suite_drive.api.list.files") && response.url().includes(source.name),
 	);
 	await Promise.all([refreshedSubtree, owner.page.goBack()]);
 	await expect(childRow).toBeVisible();

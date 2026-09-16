@@ -1,8 +1,8 @@
-Drive
+Suite Drive
 Slides
 Writer
 Sheets
-Meet
+Suite Meet
 Mail
 Calendar
 Suite Core

@@ -8,7 +8,7 @@ on:
       - develop
       - main
     paths:
-      - "suite/drive/**"
+      - "suite/suite_drive/**"
       - "suite/writer/**"
       - "suite/slides/**"
       - "suite/sheets/**"
@@ -56,7 +56,7 @@ on:
       - ".github/workflows/drive-backed-apps-e2e.yml"
   pull_request_target:
     paths:
-      - "suite/drive/**"
+      - "suite/suite_drive/**"
       - "suite/writer/**"
       - "suite/slides/**"
       - "suite/sheets/**"

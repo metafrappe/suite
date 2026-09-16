@@ -35,7 +35,7 @@ const open = ref(true)
 const folderName = ref('')
 
 const createFolder = createResource({
-  url: 'suite.drive.api.files.create_folder',
+  url: 'suite.suite_drive.api.files.create_folder',
   makeParams(file_name) {
     return {
       file_name,

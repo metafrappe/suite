@@ -1,5 +1,5 @@
 # Meet
-/suite/meet/ @BreadGenie
+/suite/suite_meet/ @BreadGenie
 /frontend/src/apps/meet/ @BreadGenie
 
 # Slides
@@ -7,7 +7,7 @@
 /frontend/src/apps/slides/ @GursheenK
 
 # Drive
-/suite/drive/ @BreadGenie @s-aga-r
+/suite/suite_drive/ @BreadGenie @s-aga-r
 /frontend/src/apps/drive/ @BreadGenie
 
 # Mail

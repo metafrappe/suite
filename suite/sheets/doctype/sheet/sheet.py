@@ -3,7 +3,7 @@ import json
 import frappe
 from frappe.model.document import Document
 
-from suite.drive.overrides.file import File as DriveFile
+from suite.suite_drive.overrides.file import File as DriveFile
 from suite.sheets.doctype.sheet.storage import (
     MAX_SHEETS_DATA_BYTES,
     decode_sheets_data,

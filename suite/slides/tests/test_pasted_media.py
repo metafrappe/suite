@@ -8,7 +8,7 @@ import frappe
 from frappe.tests import IntegrationTestCase
 from werkzeug.exceptions import Forbidden
 
-from suite.drive.overrides.file import File as DriveFile
+from suite.suite_drive.overrides.file import File as DriveFile
 from suite.slides.api.file import validate_media_file
 from suite.slides.doctype.presentation.presentation import get_updated_json, update_slide_attachments
 from suite.slides.tests.utils import make_presentation, make_private_image

@@ -9,7 +9,7 @@ from werkzeug.exceptions import Forbidden, NotFound, RequestedRangeNotSatisfiabl
 from werkzeug.test import EnvironBuilder
 from werkzeug.wrappers import Request
 
-from suite.drive.overrides.file import File as DriveFile
+from suite.suite_drive.overrides.file import File as DriveFile
 from suite.slides.api.file import get_media_response, get_reference_presentations, validate_media_file
 from suite.slides.tests.utils import (
     PNG_1PX,

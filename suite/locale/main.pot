@@ -55,7 +55,7 @@ msgid ".zip"
 msgstr ""
 
 #. Description of the 'Access Level' (Int) field in DocType 'Drive Team Member'
-#: suite/drive/doctype/drive_team_member/drive_team_member.json
+#: suite/suite_drive/doctype/drive_team_member/drive_team_member.json
 msgid "0 for Guest, 1 for User, 2 for Manager"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgid ""
 msgstr ""
 
 #. Header text in the Drive Workspace
-#: suite/drive/workspace/drive/drive.json
+#: suite/suite_drive/workspace/drive/drive.json
 msgid "<span style=\"font-size: 16px;\">Manage Drive</span>"
 msgstr ""
 
@@ -243,12 +243,12 @@ msgid "API Secret"
 msgstr ""
 
 #. Label of the aws_key (Data) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "AWS Key"
 msgstr ""
 
 #. Label of the aws_secret (Password) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "AWS Secret"
 msgstr ""
 
@@ -269,13 +269,13 @@ msgstr ""
 #. Option for the 'Status' (Select) field in DocType 'Drive User Invitation'
 #. Option for the 'Action' (Select) field in DocType 'Screened Email Address'
 #: frontend/src/apps/mail/pages/dashboard/InvitesView.vue:187
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 #: suite/mail/doctype/screened_email_address/screened_email_address.json
 msgid "Accepted"
 msgstr ""
 
 #. Label of the accepted_on (Datetime) field in DocType 'Drive User Invitation'
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "Accepted On"
 msgstr ""
 
@@ -297,7 +297,7 @@ msgid "Access Key"
 msgstr ""
 
 #. Label of the access_level (Int) field in DocType 'Drive Team Member'
-#: suite/drive/doctype/drive_team_member/drive_team_member.json
+#: suite/suite_drive/doctype/drive_team_member/drive_team_member.json
 msgid "Access Level"
 msgstr ""
 
@@ -307,8 +307,8 @@ msgstr ""
 msgid "Access Secret"
 msgstr ""
 
-#: suite/meet/api/meeting.py:114 suite/meet/api/meeting.py:203
-#: suite/meet/api/meeting.py:248 suite/meet/api/meeting.py:318
+#: suite/suite_meet/api/meeting.py:114 suite/suite_meet/api/meeting.py:203
+#: suite/suite_meet/api/meeting.py:248 suite/suite_meet/api/meeting.py:318
 msgid "Access denied"
 msgstr ""
 
@@ -373,7 +373,7 @@ msgstr ""
 
 #. Name of a DocType
 #. Label of a Workspace Sidebar Item
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 #: suite/mail/workspace_sidebar/server.json
 msgid "Account Request"
 msgstr ""
@@ -456,7 +456,7 @@ msgstr ""
 
 #. Label of the action_type (Select) field in DocType 'Drive Entity Activity
 #. Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Action Type"
 msgstr ""
 
@@ -530,7 +530,7 @@ msgstr ""
 #. Option for the 'Status' (Select) field in DocType 'File'
 #. Label of the active (Check) field in DocType 'Sieve Script'
 #: frontend/src/apps/mail/components/Settings/AutomationSettings.vue:27
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 #: suite/mail/doctype/sieve_script/sieve_script.json
 msgid "Active"
 msgstr ""
@@ -872,12 +872,12 @@ msgid "Allow"
 msgstr ""
 
 #. Label of the allow_guest (Check) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Allow Guest"
 msgstr ""
 
 #. Label of the allow_guest (Check) field in DocType 'Sae Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "Allow Guest Access"
 msgstr ""
 
@@ -894,7 +894,7 @@ msgstr ""
 
 #. Description of the 'Allow Guest Access' (Check) field in DocType 'Sae
 #. Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "Allow guest users to join meetings without authentication"
 msgstr ""
 
@@ -1153,7 +1153,7 @@ msgid "Are you sure you want to remove this contact from the selected address bo
 msgstr ""
 
 #. Label of the as_guest (Check) field in DocType 'Drive User Invitation'
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "As Guest"
 msgstr ""
 
@@ -1175,7 +1175,7 @@ msgstr ""
 msgid "Assigned Email"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:81
+#: suite/suite_drive/public/js/FileUploader.vue:81
 msgid "Attach"
 msgstr ""
 
@@ -1238,7 +1238,7 @@ msgid "Authentication secret for JMAP PushSubscription encryption."
 msgstr ""
 
 #. Label of the auto_detect_links (Check) field in DocType 'Drive Settings'
-#: suite/drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
 msgid "Auto Detect Links"
 msgstr ""
 
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'Drive User Invitation'
 #: frontend/src/apps/drive/components/Sidebar.vue:155
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "Automatic"
 msgstr ""
 
@@ -1363,7 +1363,7 @@ msgid "Backup Email is required."
 msgstr ""
 
 #. Label of the banned_users (Table) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Banned Users"
 msgstr ""
 
@@ -1723,7 +1723,7 @@ msgstr ""
 
 #. Description of the 'Meta Value' (Data) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Can contain whatever meta value needed for the access log. Ex: Used to store access level 1,2,3 etc on a DriveDocShare"
 msgstr ""
 
@@ -1839,11 +1839,11 @@ msgstr ""
 msgid "Checked if the user has indicated they wish to see this Calendar in their client."
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:72
+#: suite/suite_drive/public/js/FileUploader.vue:72
 msgid "Choose a file to attach"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:70
+#: suite/suite_drive/public/js/FileUploader.vue:70
 msgid "Choose a file, or open a folder"
 msgstr ""
 
@@ -1947,7 +1947,7 @@ msgid "Cluster File"
 msgstr ""
 
 #. Label of the co_hosts (Table) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Co-hosts"
 msgstr ""
 
@@ -1956,7 +1956,7 @@ msgid "Code copied to clipboard"
 msgstr ""
 
 #. Label of the codec_strategy (Select) field in DocType 'Sae Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "Codec Strategy"
 msgstr ""
 
@@ -2019,8 +2019,8 @@ msgstr ""
 #. Label of the comment (Check) field in DocType 'Drive Permission'
 #. Label of the comment (Small Text) field in DocType 'Event Notification'
 #. Label of the comment (Small Text) field in DocType 'Event Participant'
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 #: suite/mail/doctype/event_notification/event_notification.json
 #: suite/mail/doctype/event_participant/event_participant.json
 msgid "Comment"
@@ -2277,12 +2277,12 @@ msgid "Content"
 msgstr ""
 
 #. Label of the content_docname (Dynamic Link) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Content Docname"
 msgstr ""
 
 #. Label of the content_doctype (Link) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Content Doctype"
 msgstr ""
 
@@ -2331,7 +2331,7 @@ msgid "Copy to Clipboard"
 msgstr ""
 
 #. Label of the core_section (Section Break) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Core"
 msgstr ""
 
@@ -2351,11 +2351,11 @@ msgstr ""
 msgid "Could not extract the generated app password secret from the response."
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:367
+#: suite/suite_drive/public/js/FileUploader.vue:367
 msgid "Could not upload to Drive"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:349
+#: suite/suite_drive/public/js/FileUploader.vue:349
 msgid "Could not upload to Site files"
 msgstr ""
 
@@ -2419,12 +2419,12 @@ msgstr ""
 #. Label of the created_at (Datetime) field in DocType 'E2EE Device Key'
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:109
 #: suite/mail/doctype/contact_card/contact_card.json
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
 msgid "Created At"
 msgstr ""
 
 #. Label of the user (Link) field in DocType 'Drive Token'
-#: suite/drive/doctype/drive_token/drive_token.json
+#: suite/suite_drive/doctype/drive_token/drive_token.json
 msgid "Created By"
 msgstr ""
 
@@ -2696,7 +2696,7 @@ msgstr ""
 
 #. Description of the 'Signature Version' (Data) field in DocType 'Drive Disk
 #. Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Defaults to \"s3v4\". Some providers only support \"s3\"."
 msgstr ""
 
@@ -3109,7 +3109,7 @@ msgid "Details"
 msgstr ""
 
 #. Description of the 'Codec Strategy' (Select) field in DocType 'Sae Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "Determines whether meetings try VP9 SVC first or stick to VP8 simulcast."
 msgstr ""
 
@@ -3125,7 +3125,7 @@ msgid "Device Client ID"
 msgstr ""
 
 #. Label of the device_id (Data) field in DocType 'E2EE Device Key'
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
 msgid "Device ID"
 msgstr ""
 
@@ -3183,7 +3183,7 @@ msgstr ""
 
 #. Label of the disk_section (Section Break) field in DocType 'Drive Disk
 #. Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Disk"
 msgstr ""
 
@@ -3200,7 +3200,7 @@ msgstr ""
 #: frontend/src/apps/mail/components/Settings/IdentitySettings.vue:132
 #: suite/mail/doctype/email_address/email_address.json
 #: suite/mail/doctype/mail_message_recipient/mail_message_recipient.json
-#: suite/meet/doctype/sae_meeting_user/sae_meeting_user.json
+#: suite/suite_meet/doctype/sae_meeting_user/sae_meeting_user.json
 msgid "Display Name"
 msgstr ""
 
@@ -3215,7 +3215,7 @@ msgid "Disposition"
 msgstr ""
 
 #. Label of the flat (Check) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Do not mimic folder/file structure"
 msgstr ""
 
@@ -3226,7 +3226,7 @@ msgstr ""
 
 #. Label of the notif_doctype_name (Dynamic Link) field in DocType 'Drive
 #. Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "DocType Name"
 msgstr ""
 
@@ -3243,12 +3243,12 @@ msgstr ""
 
 #. Label of the document_field (Data) field in DocType 'Drive Entity Activity
 #. Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Document Field"
 msgstr ""
 
 #. Label of the notif_doctype (Link) field in DocType 'Drive Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "Document Type"
 msgstr ""
 
@@ -3377,93 +3377,93 @@ msgid "Drafted At - Creation"
 msgstr ""
 
 #. Name of a Workspace
-#: suite/drive/config/desktop.py:11 suite/drive/workspace/drive/drive.json
+#: suite/suite_drive/config/desktop.py:11 suite/suite_drive/workspace/drive/drive.json
 msgid "Drive"
 msgstr ""
 
 #. Name of a role
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Drive Admin"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Drive Disk Settings"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Drive Entity Activity Log"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
 msgid "Drive Entity Log"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_favourite/drive_favourite.json
+#: suite/suite_drive/doctype/drive_favourite/drive_favourite.json
 msgid "Drive Favourite"
 msgstr ""
 
 #. Label of the root_folder (Data) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Drive Folder"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "Drive Notification"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 msgid "Drive Permission"
 msgstr ""
 
 #. Label of the section_break_nfot8 (Section Break) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Drive Properties"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
 msgid "Drive Settings"
 msgstr ""
 
 #. Name of a DocType
 #. Label of the team (Link) field in DocType 'File'
-#: suite/drive/doctype/drive_team/drive_team.json
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Drive Team"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_team_member/drive_team_member.json
+#: suite/suite_drive/doctype/drive_team_member/drive_team_member.json
 msgid "Drive Team Member"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_token/drive_token.json
+#: suite/suite_drive/doctype/drive_token/drive_token.json
 msgid "Drive Token"
 msgstr ""
 
 #. Name of a role
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
-#: suite/drive/doctype/drive_favourite/drive_favourite.json
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
-#: suite/drive/doctype/drive_settings/drive_settings.json
-#: suite/drive/doctype/drive_team/drive_team.json
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_favourite/drive_favourite.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 #: suite/writer/doctype/writer_template/writer_template.json
 #: suite/writer/doctype/writer_version/writer_version.json
 msgid "Drive User"
 msgstr ""
 
 #. Name of a DocType
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "Drive User Invitation"
 msgstr ""
 
@@ -3508,17 +3508,17 @@ msgid "Duration is required for non-draft events."
 msgstr ""
 
 #. Label of the e2ee_section (Section Break) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "E2EE"
 msgstr ""
 
 #. Name of a DocType
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
 msgid "E2EE Device Key"
 msgstr ""
 
 #. Label of the e2ee_enabled (Check) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "E2EE Enabled"
 msgstr ""
 
@@ -3641,8 +3641,8 @@ msgstr ""
 #: frontend/src/apps/mail/pages/InviteSetupView.vue:5
 #: frontend/src/apps/mail/pages/LoginView.vue:5
 #: frontend/src/apps/mail/pages/ResetPasswordView.vue:4
-#: suite/drive/doctype/account_request/account_request.json
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 #: suite/mail/doctype/contact_card/contact_card.json
 #: suite/mail/doctype/email_address/email_address.json
 #: suite/mail/doctype/event_alert/event_alert.json
@@ -3743,7 +3743,7 @@ msgstr ""
 msgid "Empty"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:45
+#: suite/suite_drive/public/js/FileUploader.vue:45
 msgid "Empty folder"
 msgstr ""
 
@@ -3790,7 +3790,7 @@ msgstr ""
 #: frontend/src/apps/mail/pages/dashboard/DomainView.vue:205
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:43
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:123
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 #: suite/mail/doctype/mail_cluster/mail_cluster.json
 #: suite/mail/doctype/mail_server/mail_server.json
 #: suite/mail/doctype/rate_limit/rate_limit.json
@@ -3859,7 +3859,7 @@ msgid "Ended At - Started At"
 msgstr ""
 
 #. Label of the endpoint_url (Data) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Endpoint URL"
 msgstr ""
 
@@ -3885,18 +3885,18 @@ msgstr ""
 
 #. Label of the entity (Link) field in DocType 'Drive Entity Activity Log'
 #. Label of the entity (Link) field in DocType 'Drive Permission'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 msgid "Entity"
 msgstr ""
 
 #. Label of the entity_name (Link) field in DocType 'Drive Entity Log'
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
 msgid "Entity Name"
 msgstr ""
 
 #. Label of the entity_type (Data) field in DocType 'Drive Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "Entity Type"
 msgstr ""
 
@@ -4038,7 +4038,7 @@ msgstr ""
 
 #. Description of the 'Endpoint URL' (Data) field in DocType 'Drive Disk
 #. Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Example format: https://s3.ap-south-1.amazonaws.com"
 msgstr ""
 
@@ -4106,7 +4106,7 @@ msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'Drive User Invitation'
 #: frontend/src/apps/mail/pages/dashboard/InvitesView.vue:188
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "Expired"
 msgstr ""
 
@@ -4124,7 +4124,7 @@ msgid "Expires At"
 msgstr ""
 
 #. Label of the expiry (Datetime) field in DocType 'Drive Token'
-#: suite/drive/doctype/drive_token/drive_token.json
+#: suite/suite_drive/doctype/drive_token/drive_token.json
 msgid "Expiry"
 msgstr ""
 
@@ -4560,8 +4560,8 @@ msgstr ""
 #. Label of the file (Link) field in DocType 'Drive Token'
 #. Label of the import_file (Attach) field in DocType 'Calendar Exchange'
 #. Label of the import_file (Attach) field in DocType 'Mail Exchange'
-#: suite/drive/doctype/drive_favourite/drive_favourite.json
-#: suite/drive/doctype/drive_token/drive_token.json
+#: suite/suite_drive/doctype/drive_favourite/drive_favourite.json
+#: suite/suite_drive/doctype/drive_token/drive_token.json
 #: suite/mail/doctype/calendar_exchange/calendar_exchange.json
 #: suite/mail/doctype/mail_exchange/mail_exchange.json
 msgid "File"
@@ -4572,7 +4572,7 @@ msgid "File <code>{0}</code> not found."
 msgstr ""
 
 #. Label of the file_modified (Datetime) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "File Modified"
 msgstr ""
 
@@ -4833,7 +4833,7 @@ msgid "From Name"
 msgstr ""
 
 #. Label of the from_user (Link) field in DocType 'Drive Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "From User"
 msgstr ""
 
@@ -4852,8 +4852,8 @@ msgstr ""
 #. Meeting'
 #: frontend/src/apps/drive/ui/drive/components/InfoDialog.vue:72
 #: frontend/src/apps/mail/components/Modals/FolderModal.vue:187
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "General"
 msgstr ""
 
@@ -4875,7 +4875,7 @@ msgid "Generating keys…"
 msgstr ""
 
 #. Label of the geo_location (Code) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Geo Location"
 msgstr ""
 
@@ -4893,7 +4893,7 @@ msgid "Getting Password..."
 msgstr ""
 
 #. Label of a shortcut in the Drive Workspace
-#: suite/drive/workspace/drive/drive.json
+#: suite/suite_drive/workspace/drive/drive.json
 msgid "Go to Drive"
 msgstr ""
 
@@ -4976,31 +4976,31 @@ msgstr ""
 msgid "Guest"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:438
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:438
 msgid "Guest access is disabled globally"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:385
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:385
 msgid "Guest is banned from this meeting"
 msgstr ""
 
-#: suite/meet/api/meeting.py:468
+#: suite/suite_meet/api/meeting.py:468
 msgid "Guest not approved"
 msgstr ""
 
-#: suite/meet/api/meeting.py:460
+#: suite/suite_meet/api/meeting.py:460
 msgid "Guest session not found or expired"
 msgstr ""
 
-#: suite/meet/api/meeting.py:516
+#: suite/suite_meet/api/meeting.py:516
 msgid "Guest token has expired"
 msgstr ""
 
-#: suite/meet/api/meeting.py:359
+#: suite/suite_meet/api/meeting.py:359
 msgid "Guests are not allowed in this meeting"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:345
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:345
 msgid "Guests cannot be promoted to co-host"
 msgstr ""
 
@@ -5110,9 +5110,9 @@ msgid "Highest op-log seq applied to the live sheets_data blob."
 msgstr ""
 
 #: frontend/src/apps/writer/utils/index.js:74
-#: suite/drive/public/js/FileUploader.vue:101
-#: suite/drive/public/js/FileUploader.vue:129
-#: suite/drive/public/js/FileUploader.vue:145
+#: suite/suite_drive/public/js/FileUploader.vue:101
+#: suite/suite_drive/public/js/FileUploader.vue:129
+#: suite/suite_drive/public/js/FileUploader.vue:145
 msgid "Home"
 msgstr ""
 
@@ -5126,7 +5126,7 @@ msgid "Host"
 msgstr ""
 
 #. Label of the host_only_chat (Check) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Host Only Chat"
 msgstr ""
 
@@ -5199,7 +5199,7 @@ msgstr ""
 
 #. Label of the ip_address (Data) field in DocType 'Account Request'
 #. Label of the ip_address (Data) field in DocType 'Mail Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 #: suite/mail/doctype/mail_account_request/mail_account_request.json
 msgid "IP Address"
 msgstr ""
@@ -5227,7 +5227,7 @@ msgstr ""
 #. Label of the icon (Data) field in DocType 'Drive Team'
 #. Label of the icon (Icon) field in DocType 'Mailbox Settings'
 #: frontend/src/apps/mail/components/Modals/FolderModal.vue:27
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 #: suite/mail/doctype/mailbox_settings/mailbox_settings.json
 msgid "Icon"
 msgstr ""
@@ -5390,7 +5390,7 @@ msgstr ""
 
 #. Description of the 'Storage' (Int) field in DocType 'Drive Team'
 #. Description of the 'Quota' (Int) field in DocType 'Drive Team'
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "In MB"
 msgstr ""
 
@@ -5682,20 +5682,20 @@ msgstr ""
 msgid "Invalid filter key: {0}. Allowed keys are: {1}"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:376
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:376
 msgid "Invalid guest ID"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:379
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:382
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:379
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:382
 msgid "Invalid guest ID format"
 msgstr ""
 
-#: suite/meet/api/meeting.py:518
+#: suite/suite_meet/api/meeting.py:518
 msgid "Invalid guest token"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:444
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:444
 msgid "Invalid meeting type"
 msgstr ""
 
@@ -5733,7 +5733,7 @@ msgid "Invitation Status"
 msgstr ""
 
 #. Label of the invite (Link) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Invite"
 msgstr ""
 
@@ -5891,7 +5891,7 @@ msgstr ""
 msgid "Join Meet"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.js:6
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.js:6
 msgid "Join Meeting"
 msgstr ""
 
@@ -5995,7 +5995,7 @@ msgid "Last Day of Month"
 msgstr ""
 
 #. Label of the last_interaction (Datetime) field in DocType 'Drive Entity Log'
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
 msgid "Last Interaction"
 msgstr ""
 
@@ -6047,7 +6047,7 @@ msgstr ""
 
 #. Description of the 'Do not mimic folder/file structure' (Check) field in
 #. DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid ""
 "Legacy option.\n"
 "<br>\n"
@@ -6055,8 +6055,8 @@ msgid ""
 "By default, Drive stores files the way you see it. If this option is checked, the files are store flatly, with randomized names.\n"
 msgstr ""
 
-#: suite/drive/public/js/ff_integration.bundle.js:19
-#: suite/drive/public/js/ff_integration.bundle.js:24
+#: suite/suite_drive/public/js/ff_integration.bundle.js:19
+#: suite/suite_drive/public/js/ff_integration.bundle.js:24
 msgid "Library"
 msgstr ""
 
@@ -6135,7 +6135,7 @@ msgstr ""
 msgid "Load MIME Message"
 msgstr ""
 
-#: suite/drive/public/js/TreeNode.vue:52
+#: suite/suite_drive/public/js/TreeNode.vue:52
 msgid "Load more"
 msgstr ""
 
@@ -6150,7 +6150,7 @@ msgstr ""
 #: frontend/src/apps/mail/pages/ContactsView.vue:136
 #: frontend/src/apps/mail/pages/MailboxView.vue:52
 #: frontend/src/apps/mail/pages/ScreenerView.vue:19
-#: suite/drive/public/js/TreeNode.vue:52
+#: suite/suite_drive/public/js/TreeNode.vue:52
 #: suite/mail/doctype/mail_message/mail_message.js:99
 msgid "Loading..."
 msgstr ""
@@ -6205,7 +6205,7 @@ msgid "Log out"
 msgstr ""
 
 #. Label of the login_count (Int) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Login Count"
 msgstr ""
 
@@ -6228,7 +6228,7 @@ msgid "MIME Message"
 msgstr ""
 
 #. Label of the mime_type (Data) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "MIME Type"
 msgstr ""
 
@@ -6553,7 +6553,7 @@ msgstr ""
 
 #. Description of the 'Use Drive for file management' (Check) field in DocType
 #. 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Make all uploaded files to be managed through Drive, instead of Framework."
 msgstr ""
 
@@ -6567,7 +6567,7 @@ msgid "Manage"
 msgstr ""
 
 #. Label of a shortcut in the Drive Workspace
-#: suite/drive/workspace/drive/drive.json
+#: suite/suite_drive/workspace/drive/drive.json
 msgid "Manage Disk Settings"
 msgstr ""
 
@@ -6842,12 +6842,12 @@ msgid "Maybe"
 msgstr ""
 
 #. Name of a role
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Meet User"
 msgstr ""
 
 #. Label of the meeting_type (Select) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Meeting Type"
 msgstr ""
 
@@ -6855,9 +6855,9 @@ msgstr ""
 msgid "Meeting location {0}"
 msgstr ""
 
-#: suite/meet/api/meeting.py:312 suite/meet/api/meeting.py:353
-#: suite/meet/api/meeting.py:463 suite/meet/api/meeting.py:527
-#: suite/meet/api/meeting.py:589
+#: suite/suite_meet/api/meeting.py:312 suite/suite_meet/api/meeting.py:353
+#: suite/suite_meet/api/meeting.py:463 suite/suite_meet/api/meeting.py:527
+#: suite/suite_meet/api/meeting.py:589
 msgid "Meeting not found"
 msgstr ""
 
@@ -6882,7 +6882,7 @@ msgstr ""
 #: frontend/src/apps/mail/components/AppSidebar.vue:259
 #: frontend/src/apps/mail/pages/dashboard/MembersView.vue:3
 #: frontend/src/apps/mail/pages/dashboard/MembersView.vue:36
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Members"
 msgstr ""
 
@@ -6891,7 +6891,7 @@ msgid "Members deleted."
 msgstr ""
 
 #. Option for the 'Type' (Select) field in DocType 'Drive Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "Mention"
 msgstr ""
 
@@ -6906,8 +6906,8 @@ msgstr ""
 #. Log'
 #. Label of a Workspace Sidebar Item
 #: frontend/src/apps/mail/components/Settings/VacationResponseSettings.vue:29
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 #: suite/mail/doctype/mail_message/mail_message.json
 #: suite/mail/doctype/mail_queue/mail_queue.json
 #: suite/mail/doctype/spam_check_log/spam_check_log.json
@@ -6956,7 +6956,7 @@ msgid "Messages that arrive on or after this date-time (but before the To Date i
 msgstr ""
 
 #. Label of the meta_value (Data) field in DocType 'Drive Entity Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Meta Value"
 msgstr ""
 
@@ -7269,7 +7269,7 @@ msgid "New Team"
 msgstr ""
 
 #. Label of the new_value (Data) field in DocType 'Drive Entity Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "New Value"
 msgstr ""
 
@@ -7497,7 +7497,7 @@ msgstr ""
 msgid "No mails found for the selected filter."
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:45
+#: suite/suite_drive/public/js/FileUploader.vue:45
 msgid "No matches"
 msgstr ""
 
@@ -7587,11 +7587,11 @@ msgstr ""
 msgid "Not Keyword"
 msgstr ""
 
-#: suite/meet/api/meeting.py:521
+#: suite/suite_meet/api/meeting.py:521
 msgid "Not a guest token"
 msgstr ""
 
-#: suite/meet/api/meeting.py:111 suite/meet/api/meeting.py:278
+#: suite/suite_meet/api/meeting.py:111 suite/suite_meet/api/meeting.py:278
 msgid "Not a meeting member"
 msgstr ""
 
@@ -7599,7 +7599,7 @@ msgstr ""
 msgid "Not allowed to create automation script."
 msgstr ""
 
-#: suite/drive/api/s3.py:10 suite/drive/api/s3.py:14
+#: suite/suite_drive/api/s3.py:10 suite/suite_drive/api/s3.py:14
 msgid "Not found"
 msgstr ""
 
@@ -7665,7 +7665,7 @@ msgid "Number of worker threads to use for the store, defaults to the number of 
 msgstr ""
 
 #. Label of the oauth_signup (Check) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "OAuth Signup"
 msgstr ""
 
@@ -7675,12 +7675,12 @@ msgid "OK"
 msgstr ""
 
 #. Label of the otp (Data) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "OTP"
 msgstr ""
 
 #. Label of the otp_generated_at (Datetime) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "OTP Generated at"
 msgstr ""
 
@@ -7695,7 +7695,7 @@ msgid "OffsetTrigger"
 msgstr ""
 
 #. Label of the old_value (Data) field in DocType 'Drive Entity Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "Old Value"
 msgstr ""
 
@@ -7733,7 +7733,7 @@ msgid "Only Administrator can delete Mail Server."
 msgstr ""
 
 #. Description of the 'S3 Bucket' (Data) field in DocType 'Drive Team'
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "Only applies if S3 is turned on."
 msgstr ""
 
@@ -7753,20 +7753,20 @@ msgstr ""
 msgid "Only failed jobs can be retried."
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:209
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:269
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:209
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:269
 msgid "Only hosts and co-hosts can approve join requests"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:391
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:391
 msgid "Only hosts and co-hosts can convert meetings to E2EE"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:283
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:283
 msgid "Only hosts and co-hosts can reject join requests"
 msgstr ""
 
-#: suite/meet/api/meeting.py:603
+#: suite/suite_meet/api/meeting.py:603
 msgid "Only hosts and co-hosts can view E2EE details"
 msgstr ""
 
@@ -7786,11 +7786,11 @@ msgstr ""
 msgid "Only submitted mail exchange can be retried."
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:342
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:342
 msgid "Only the meeting host can promote users to co-host"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:432
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:432
 msgid "Only the meeting host or co-host can update settings"
 msgstr ""
 
@@ -7834,8 +7834,8 @@ msgstr ""
 msgid "Open in Desk"
 msgstr ""
 
-#: suite/drive/doctype/drive_team/drive_team.js:6
-#: suite/drive/public/js/file.js:8
+#: suite/suite_drive/doctype/drive_team/drive_team.js:6
+#: suite/suite_drive/public/js/file.js:8
 msgid "Open in Drive"
 msgstr ""
 
@@ -8109,7 +8109,7 @@ msgstr ""
 #. Option for the 'Status' (Select) field in DocType 'Server Job'
 #. Option for the 'Status' (Select) field in DocType 'Server Job Command'
 #: frontend/src/apps/mail/pages/dashboard/InvitesView.vue:186
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 #: suite/mail/doctype/mail_queue/mail_queue.json
 #: suite/mail/doctype/server_ansible_play/server_ansible_play.json
 #: suite/mail/doctype/server_ansible_play_task/server_ansible_play_task.json
@@ -8127,7 +8127,7 @@ msgstr ""
 msgid "Permanently Delete"
 msgstr ""
 
-#: suite/drive/public/js/file.js:5
+#: suite/suite_drive/public/js/file.js:5
 msgid "Permissions"
 msgstr ""
 
@@ -8135,7 +8135,7 @@ msgstr ""
 #: frontend/src/apps/mail/components/Modals/AddContactAddressModal.vue:60
 #: frontend/src/apps/mail/components/Modals/AddContactEmailModal.vue:55
 #: frontend/src/apps/mail/components/Modals/AddContactPhoneModal.vue:50
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "Personal"
 msgstr ""
 
@@ -8398,7 +8398,7 @@ msgid "Preferences"
 msgstr ""
 
 #. Label of the prefix (Data) field in DocType 'Drive Team'
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "Prefix"
 msgstr ""
 
@@ -8437,7 +8437,7 @@ msgid "Preview not available for this file type"
 msgstr ""
 
 #. Label of the preview_size (Int) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Preview size"
 msgstr ""
 
@@ -8539,7 +8539,7 @@ msgid "Profile updated."
 msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'Drive User Invitation'
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 msgid "Proposed"
 msgstr ""
 
@@ -8586,7 +8586,7 @@ msgstr ""
 #. Option for the 'Privacy' (Select) field in DocType 'Calendar Event'
 #: frontend/src/apps/calendar/components/Modals/EventModal.vue:394
 #: frontend/src/apps/drive/components/ListView.vue:120
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 #: suite/mail/doctype/calendar_event/calendar_event.json
 msgid "Public"
 msgstr ""
@@ -8773,7 +8773,7 @@ msgstr ""
 #. Label of the quota (Int) field in DocType 'Drive Team'
 #. Name of a DocType
 #. Label of a Workspace Sidebar Item
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 #: suite/mail/doctype/quota/quota.json suite/mail/workspace_sidebar/client.json
 msgid "Quota"
 msgstr ""
@@ -8812,8 +8812,8 @@ msgstr ""
 
 #. Label of the read (Check) field in DocType 'Drive Notification'
 #. Label of the read (Check) field in DocType 'Drive Permission'
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 msgid "Read"
 msgstr ""
 
@@ -8980,18 +8980,18 @@ msgid "Reference Presentations"
 msgstr ""
 
 #. Label of the referral_source (Data) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Referral Source"
 msgstr ""
 
 #. Label of the referrer_data (Section Break) field in DocType 'Account
 #. Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Referrer Data"
 msgstr ""
 
 #. Label of the referrer_id (Data) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Referrer ID"
 msgstr ""
 
@@ -9115,7 +9115,7 @@ msgid "Remove from Recents"
 msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Removed"
 msgstr ""
 
@@ -9218,7 +9218,7 @@ msgstr ""
 
 #. Label of the request_key (Data) field in DocType 'Account Request'
 #. Label of the request_key (Data) field in DocType 'Mail Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 #: suite/mail/doctype/mail_account_request/mail_account_request.json
 msgid "Request Key"
 msgstr ""
@@ -9395,15 +9395,15 @@ msgstr ""
 #. Label of the s3_section (Section Break) field in DocType 'Drive Disk
 #. Settings'
 #. Option for the 'Type' (Select) field in DocType 'Mail Cluster Store'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 #: suite/mail/doctype/mail_cluster_store/mail_cluster_store.json
 msgid "S3"
 msgstr ""
 
 #. Label of the bucket (Data) field in DocType 'Drive Disk Settings'
 #. Label of the s3_bucket (Data) field in DocType 'Drive Team'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "S3 Bucket"
 msgstr ""
 
@@ -9418,7 +9418,7 @@ msgstr ""
 msgid "SAS Token, when not using accessKey based authentication."
 msgstr ""
 
-#: suite/meet/api/meeting.py:38 suite/meet/api/meeting.py:511
+#: suite/suite_meet/api/meeting.py:38 suite/suite_meet/api/meeting.py:511
 msgid "SFU secret not configured"
 msgstr ""
 
@@ -9487,17 +9487,17 @@ msgid "STARTTLS"
 msgstr ""
 
 #. Name of a DocType
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Sae Meeting"
 msgstr ""
 
 #. Name of a DocType
-#: suite/meet/doctype/sae_meeting_user/sae_meeting_user.json
+#: suite/suite_meet/doctype/sae_meeting_user/sae_meeting_user.json
 msgid "Sae Meeting User"
 msgstr ""
 
 #. Name of a DocType
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "Sae Settings"
 msgstr ""
 
@@ -9617,7 +9617,7 @@ msgstr ""
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:8
 #: frontend/src/apps/mail/pages/dashboard/InvitesView.vue:3
 #: frontend/src/apps/mail/pages/dashboard/UsersView.vue:3
-#: suite/drive/public/js/FileUploader.vue:23
+#: suite/suite_drive/public/js/FileUploader.vue:23
 msgid "Search"
 msgstr ""
 
@@ -9643,7 +9643,7 @@ msgstr ""
 msgid "Search by keyword"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:36
+#: suite/suite_drive/public/js/FileUploader.vue:36
 msgid "Search results"
 msgstr ""
 
@@ -9735,7 +9735,7 @@ msgstr ""
 msgid "Select a sender to view their emails."
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:14
+#: suite/suite_drive/public/js/FileUploader.vue:14
 msgid "Select a team"
 msgstr ""
 
@@ -10047,8 +10047,8 @@ msgstr ""
 #: frontend/src/apps/drive/components/GenericPage.vue:324
 #: frontend/src/apps/drive/components/Navbar.vue:206
 #: frontend/src/apps/writer/components/Navbar.vue:192
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 msgid "Share"
 msgstr ""
 
@@ -10303,7 +10303,7 @@ msgid "Signature Name"
 msgstr ""
 
 #. Label of the signature_version (Data) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Signature Version"
 msgstr ""
 
@@ -10325,7 +10325,7 @@ msgid "Signatures let you automatically add personalized content to your emails.
 msgstr ""
 
 #. Label of the signed_up (Check) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "Signed Up"
 msgstr ""
 
@@ -10344,8 +10344,8 @@ msgid "Signup is disabled."
 msgstr ""
 
 #: frontend/src/apps/drive/components/DriveToolBar.vue:12
-#: suite/drive/public/js/FileUploader.vue:137
-#: suite/drive/public/js/FileUploader.vue:146
+#: suite/suite_drive/public/js/FileUploader.vue:137
+#: suite/suite_drive/public/js/FileUploader.vue:146
 msgid "Site"
 msgstr ""
 
@@ -10716,8 +10716,8 @@ msgstr ""
 #: frontend/src/apps/mail/pages/MailExchangesView.vue:127
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:15
 #: frontend/src/apps/mail/pages/dashboard/DomainsView.vue:108
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 #: suite/mail/doctype/calendar_event/calendar_event.json
 #: suite/mail/doctype/calendar_exchange/calendar_exchange.json
 #: suite/mail/doctype/event_participant/event_participant.json
@@ -10737,7 +10737,7 @@ msgstr ""
 #: frontend/src/apps/drive/components/Settings/StorageSettings.vue:3
 #: frontend/src/apps/drive/components/StorageBar.vue:7
 #: frontend/src/apps/mail/components/QuotaBar.vue:6
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 #: suite/mail/doctype/mail_cluster/mail_cluster.json
 msgid "Storage"
 msgstr ""
@@ -10922,16 +10922,16 @@ msgid "System Default"
 msgstr ""
 
 #. Name of a role
-#: suite/drive/doctype/account_request/account_request.json
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
-#: suite/drive/doctype/drive_settings/drive_settings.json
-#: suite/drive/doctype/drive_team/drive_team.json
-#: suite/drive/doctype/drive_token/drive_token.json
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_token/drive_token.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
 #: suite/mail/doctype/address_book/address_book.json
 #: suite/mail/doctype/calendar/calendar.json
 #: suite/mail/doctype/calendar_event/calendar_event.json
@@ -10968,9 +10968,9 @@ msgstr ""
 #: suite/mail/doctype/user_account/user_account.json
 #: suite/mail/doctype/user_settings/user_settings.json
 #: suite/mail/doctype/vacation_response/vacation_response.json
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 #: suite/sheets/doctype/sheet/sheet.json
 #: suite/sheets/doctype/sheet_cell/sheet_cell.json
 #: suite/sheets/doctype/sheet_collab_state/sheet_collab_state.json
@@ -11025,16 +11025,16 @@ msgstr ""
 #. Label of the team (Link) field in DocType 'Drive User Invitation'
 #. Label of the team (Link) field in DocType 'Writer Template'
 #: frontend/src/apps/drive/components/Settings/StorageSettings.vue:22
-#: suite/drive/doctype/drive_notification/drive_notification.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
-#: suite/drive/doctype/drive_user_invitation/drive_user_invitation.json
-#: suite/drive/public/js/FileUploader.vue:148
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_user_invitation/drive_user_invitation.json
+#: suite/suite_drive/public/js/FileUploader.vue:148
 #: suite/writer/doctype/writer_template/writer_template.json
 msgid "Team"
 msgstr ""
 
 #. Label of the team_domain (Data) field in DocType 'Drive Team'
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 msgid "Team Domain"
 msgstr ""
 
@@ -11043,14 +11043,14 @@ msgid "Team Frappe"
 msgstr ""
 
 #. Label of the team_prefix (Select) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Team Prefix"
 msgstr ""
 
 #. Label of a shortcut in the Drive Workspace
 #: frontend/src/apps/drive/components/Settings/UserListSettings.vue:4
-#: suite/drive/public/js/FileUploader.vue:102
-#: suite/drive/workspace/drive/drive.json
+#: suite/suite_drive/public/js/FileUploader.vue:102
+#: suite/suite_drive/workspace/drive/drive.json
 msgid "Teams"
 msgstr ""
 
@@ -11840,7 +11840,7 @@ msgid "Thumbnail"
 msgstr ""
 
 #. Label of the thumbnail_prefix (Data) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Thumbnail prefix"
 msgstr ""
 
@@ -11897,9 +11897,9 @@ msgstr ""
 #. Label of the title (Data) field in DocType 'Writer Version'
 #: frontend/src/apps/calendar/components/Modals/EventModal.vue:422
 #: frontend/src/apps/mail/components/Settings/CalendarExportSettings.vue:30
-#: suite/drive/doctype/drive_team/drive_team.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
 #: suite/mail/doctype/calendar_event/calendar_event.json
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 #: suite/sheets/doctype/sheet/sheet.json
 #: suite/slides/doctype/presentation/presentation.json
 #: suite/writer/doctype/writer_doc_version/writer_doc_version.json
@@ -11931,7 +11931,7 @@ msgid "To Date must be after From Date."
 msgstr ""
 
 #. Label of the to_user (Link) field in DocType 'Drive Notification'
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 msgid "To User"
 msgstr ""
 
@@ -11960,7 +11960,7 @@ msgstr ""
 msgid "Token"
 msgstr ""
 
-#: suite/meet/api/meeting.py:524
+#: suite/suite_meet/api/meeting.py:524
 msgid "Token meeting ID does not match"
 msgstr ""
 
@@ -12062,7 +12062,7 @@ msgid "Transition Duration"
 msgstr ""
 
 #. Option for the 'Status' (Select) field in DocType 'File'
-#: suite/drive/fixtures/custom_field.json suite/fixtures/custom_field.json
+#: suite/suite_drive/fixtures/custom_field.json suite/fixtures/custom_field.json
 msgid "Trashed"
 msgstr ""
 
@@ -12090,7 +12090,7 @@ msgstr ""
 #: frontend/src/apps/mail/pages/ContactView.vue:393
 #: frontend/src/apps/mail/pages/ContactView.vue:399
 #: frontend/src/apps/mail/pages/ContactView.vue:404
-#: suite/drive/doctype/drive_notification/drive_notification.json
+#: suite/suite_drive/doctype/drive_notification/drive_notification.json
 #: suite/mail/doctype/contact_card_address/contact_card_address.json
 #: suite/mail/doctype/contact_card_email/contact_card_email.json
 #: suite/mail/doctype/contact_card_phone/contact_card_phone.json
@@ -12159,7 +12159,7 @@ msgid "URL"
 msgstr ""
 
 #. Label of the url_args (Code) field in DocType 'Account Request'
-#: suite/drive/doctype/account_request/account_request.json
+#: suite/suite_drive/doctype/account_request/account_request.json
 msgid "URL Args"
 msgstr ""
 
@@ -12363,12 +12363,12 @@ msgid "Updating event..."
 msgstr ""
 
 #. Label of the upload (Check) field in DocType 'Drive Permission'
-#: suite/drive/doctype/drive_permission/drive_permission.json
-#: suite/drive/public/js/FileUploader.vue:63
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/public/js/FileUploader.vue:63
 msgid "Upload"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:81
+#: suite/suite_drive/public/js/FileUploader.vue:81
 msgid "Upload & attach"
 msgstr ""
 
@@ -12382,11 +12382,11 @@ msgstr ""
 msgid "Upload New Photo"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:320
+#: suite/suite_drive/public/js/FileUploader.vue:320
 msgid "Upload failed"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:77
+#: suite/suite_drive/public/js/FileUploader.vue:77
 msgid "Upload new"
 msgstr ""
 
@@ -12402,7 +12402,7 @@ msgstr ""
 
 #. Label of the use_drive_for_files (Check) field in DocType 'Drive Disk
 #. Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Use Drive for file management"
 msgstr ""
 
@@ -12438,7 +12438,7 @@ msgstr ""
 
 #. Description of the 'Preview size' (Int) field in DocType 'Drive Disk
 #. Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "Used to configure maximum file sizes of in-browser previews (in megabytes)."
 msgstr ""
 
@@ -12467,11 +12467,11 @@ msgstr ""
 #: frontend/src/apps/mail/pages/dashboard/UsersView.vue:47
 #: frontend/src/apps/mail/pages/dashboard/UsersView.vue:154
 #: frontend/src/apps/mail/pages/dashboard/UsersView.vue:162
-#: suite/drive/doctype/drive_entity_log/drive_entity_log.json
-#: suite/drive/doctype/drive_favourite/drive_favourite.json
-#: suite/drive/doctype/drive_permission/drive_permission.json
-#: suite/drive/doctype/drive_settings/drive_settings.json
-#: suite/drive/doctype/drive_team_member/drive_team_member.json
+#: suite/suite_drive/doctype/drive_entity_log/drive_entity_log.json
+#: suite/suite_drive/doctype/drive_favourite/drive_favourite.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_team_member/drive_team_member.json
 #: suite/mail/doctype/calendar_exchange/calendar_exchange.json
 #: suite/mail/doctype/mail_exchange/mail_exchange.json
 #: suite/mail/doctype/mail_queue/mail_queue.json
@@ -12480,7 +12480,7 @@ msgstr ""
 #: suite/mail/doctype/user_account/user_account.json
 #: suite/mail/doctype/user_settings/user_settings.json
 #: suite/mail/doctype/vacation_response/vacation_response.json
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
 msgid "User"
 msgstr ""
 
@@ -12496,7 +12496,7 @@ msgid "User Details"
 msgstr ""
 
 #. Label of the user (Data) field in DocType 'Sae Meeting User'
-#: suite/meet/doctype/sae_meeting_user/sae_meeting_user.json
+#: suite/suite_meet/doctype/sae_meeting_user/sae_meeting_user.json
 msgid "User ID"
 msgstr ""
 
@@ -12516,11 +12516,11 @@ msgstr ""
 msgid "User does not exist or is disabled."
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:348
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:348
 msgid "User is already a host or co-host"
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:351
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:351
 msgid "User is not currently in the meeting"
 msgstr ""
 
@@ -12528,7 +12528,7 @@ msgstr ""
 msgid "User is required to update password on Stalwart server."
 msgstr ""
 
-#: suite/meet/doctype/sae_meeting/sae_meeting.py:363
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.py:363
 msgid "User promoted to co-host successfully"
 msgstr ""
 
@@ -12644,8 +12644,8 @@ msgstr ""
 #. Label of the users (Table) field in DocType 'Drive Team'
 #. Label of the users_section (Section Break) field in DocType 'Sae Meeting'
 #: frontend/src/apps/mail/pages/dashboard/MembersView.vue:11
-#: suite/drive/doctype/drive_team/drive_team.json
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_drive/doctype/drive_team/drive_team.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Users"
 msgstr ""
 
@@ -12826,7 +12826,7 @@ msgid "WARNING"
 msgstr ""
 
 #. Label of the waiting_room (Table) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "Waiting Room"
 msgstr ""
 
@@ -12965,7 +12965,7 @@ msgid "Work signature"
 msgstr ""
 
 #. Label of the write (Check) field in DocType 'Drive Permission'
-#: suite/drive/doctype/drive_permission/drive_permission.json
+#: suite/suite_drive/doctype/drive_permission/drive_permission.json
 msgid "Write"
 msgstr ""
 
@@ -12978,7 +12978,7 @@ msgstr ""
 
 #. Label of the writer_section (Section Break) field in DocType 'Drive
 #. Settings'
-#: suite/drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
 msgid "Writer"
 msgstr ""
 
@@ -12998,7 +12998,7 @@ msgid "Writer Document Update"
 msgstr ""
 
 #. Label of the writer_settings (JSON) field in DocType 'Drive Settings'
-#: suite/drive/doctype/drive_settings/drive_settings.json
+#: suite/suite_drive/doctype/drive_settings/drive_settings.json
 msgid "Writer Settings"
 msgstr ""
 
@@ -13036,9 +13036,9 @@ msgstr ""
 msgid "You"
 msgstr ""
 
-#: suite/meet/api/meeting.py:108 suite/meet/api/meeting.py:156
-#: suite/meet/api/meeting.py:315 suite/meet/api/meeting.py:384
-#: suite/meet/api/meeting.py:471
+#: suite/suite_meet/api/meeting.py:108 suite/suite_meet/api/meeting.py:156
+#: suite/suite_meet/api/meeting.py:315 suite/suite_meet/api/meeting.py:384
+#: suite/suite_meet/api/meeting.py:471
 msgid "You are banned from this meeting"
 msgstr ""
 
@@ -13070,8 +13070,8 @@ msgstr ""
 msgid "You do not have permission to view messages for this account."
 msgstr ""
 
-#: suite/drive/api/product.py:308 suite/drive/api/storage.py:15
-#: suite/drive/api/storage.py:58
+#: suite/suite_drive/api/product.py:308 suite/suite_drive/api/storage.py:15
+#: suite/suite_drive/api/storage.py:58
 msgid "You don't have access to this team."
 msgstr ""
 
@@ -13079,7 +13079,7 @@ msgstr ""
 msgid "You don't have permission to access this file"
 msgstr ""
 
-#: suite/drive/api/product.py:84 suite/drive/api/product.py:257
+#: suite/suite_drive/api/product.py:84 suite/suite_drive/api/product.py:257
 msgid "You don't have the permissions for this action."
 msgstr ""
 
@@ -13196,13 +13196,13 @@ msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "comment"
 msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "create"
 msgstr ""
 
@@ -13212,7 +13212,7 @@ msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "delete"
 msgstr ""
 
@@ -13242,7 +13242,7 @@ msgstr ""
 msgid "description"
 msgstr ""
 
-#: suite/meet/api/meeting.py:621
+#: suite/suite_meet/api/meeting.py:621
 msgid "device_id must be 1-64 chars of [a-zA-Z0-9._-]"
 msgstr ""
 
@@ -13256,21 +13256,21 @@ msgid "drafts"
 msgstr ""
 
 #. Label of the ed25519_public_key (Data) field in DocType 'E2EE Device Key'
-#: suite/meet/doctype/e2ee_device_key/e2ee_device_key.json
+#: suite/suite_meet/doctype/e2ee_device_key/e2ee_device_key.json
 msgid "ed25519 Public Key (base64)"
 msgstr ""
 
-#: suite/meet/api/meeting.py:626
+#: suite/suite_meet/api/meeting.py:626
 msgid "ed25519_public_key must be base64"
 msgstr ""
 
-#: suite/meet/api/meeting.py:628
+#: suite/suite_meet/api/meeting.py:628
 msgid "ed25519_public_key must decode to 32 bytes"
 msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "edit"
 msgstr ""
 
@@ -13393,7 +13393,7 @@ msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "move"
 msgstr ""
 
@@ -13411,7 +13411,7 @@ msgstr ""
 #. Option for the 'Team Prefix' (Select) field in DocType 'Drive Disk Settings'
 #. Option for the 'Network Mode' (Select) field in DocType 'Server Deployment
 #. Service'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 #: suite/mail/doctype/server_deployment_service/server_deployment_service.json
 msgid "none"
 msgstr ""
@@ -13459,7 +13459,7 @@ msgid "on-failure"
 msgstr ""
 
 #. Option for the 'Meeting Type' (Select) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "open"
 msgstr ""
 
@@ -13489,7 +13489,7 @@ msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "rename"
 msgstr ""
 
@@ -13506,7 +13506,7 @@ msgid "resp3"
 msgstr ""
 
 #. Option for the 'Meeting Type' (Select) field in DocType 'Sae Meeting'
-#: suite/meet/doctype/sae_meeting/sae_meeting.json
+#: suite/suite_meet/doctype/sae_meeting/sae_meeting.json
 msgid "restricted"
 msgstr ""
 
@@ -13525,39 +13525,39 @@ msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "share_add"
 msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "share_edit"
 msgstr ""
 
 #. Option for the 'Action Type' (Select) field in DocType 'Drive Entity
 #. Activity Log'
-#: suite/drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
+#: suite/suite_drive/doctype/drive_entity_activity_log/drive_entity_activity_log.json
 msgid "share_remove"
 msgstr ""
 
 #. Option for the 'Codec Strategy' (Select) field in DocType 'Sae Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "simulcast"
 msgstr ""
 
 #. Option for the 'Codec Strategy' (Select) field in DocType 'Sae Settings'
-#: suite/meet/doctype/sae_settings/sae_settings.json
+#: suite/suite_meet/doctype/sae_settings/sae_settings.json
 msgid "svc"
 msgstr ""
 
 #. Option for the 'Team Prefix' (Select) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "team_id"
 msgstr ""
 
 #. Option for the 'Team Prefix' (Select) field in DocType 'Drive Disk Settings'
-#: suite/drive/doctype/drive_disk_settings/drive_disk_settings.json
+#: suite/suite_drive/doctype/drive_disk_settings/drive_disk_settings.json
 msgid "team_name"
 msgstr ""
 
@@ -13572,7 +13572,7 @@ msgstr ""
 msgid "then"
 msgstr ""
 
-#: suite/drive/public/js/FileUploader.vue:63
+#: suite/suite_drive/public/js/FileUploader.vue:63
 msgid "to"
 msgstr ""
 

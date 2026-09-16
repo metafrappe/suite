@@ -73,7 +73,7 @@ const validate_guest = async (socket, payload) => {
 	try {
 		const body = new URLSearchParams(payload);
 		const response = await socket.frappe_request(
-			"/api/v2/method/suite.meet.api.meeting.validate_guest_session",
+			"/api/v2/method/suite.suite_meet.api.meeting.validate_guest_session",
 			{},
 			{ method: "POST", body },
 		);

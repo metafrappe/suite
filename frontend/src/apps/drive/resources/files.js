@@ -31,7 +31,7 @@ export const COMMON_OPTIONS = {
 
 const getFiles = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.files',
+  url: 'suite.suite_drive.api.list.files',
   makeParams: (params) => {
     return params
   },
@@ -40,39 +40,39 @@ const getFiles = createResource({
 
 // The site root and the current user's private folder
 export const rootInfo = createResource({
-  url: 'suite.drive.api.files.get_root_folder',
+  url: 'suite.suite_drive.api.files.get_root_folder',
   method: 'GET',
   cache: 'root-info',
 })
 
 export const getRecents = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.recents',
+  url: 'suite.suite_drive.api.list.recents',
   cache: 'recents-folder-contents'
 })
 
 export const getPersonal = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.files',
+  url: 'suite.suite_drive.api.list.files',
   cache: 'personal-folder-contents',
   makeParams: (params) => params,
 })
 
 export const getAttachments = createResource({
-  url: 'suite.drive.api.list.get_attachments',
+  url: 'suite.suite_drive.api.list.get_attachments',
   makeParams: (params) => params,
   cache: 'attachments-folder-contents',
 })
 
 export const getFavourites = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.favourites',
+  url: 'suite.suite_drive.api.list.favourites',
   cache: 'favourite-folder-contents',
 })
 
 export const getDocuments = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.files',
+  url: 'suite.suite_drive.api.list.files',
   makeParams: (params) => {
     return { ...params, file_kinds: '["Frappe Document"]' }
   },
@@ -102,7 +102,7 @@ export const getSlides = createResource({
 
 export const getShared = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.shared',
+  url: 'suite.suite_drive.api.list.shared',
   cache: 'shared-folder-contents',
   makeParams: (params) => {
     return { shared_type: 'with', ...params }
@@ -111,7 +111,7 @@ export const getShared = createResource({
 
 export const getTrash = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.trash',
+  url: 'suite.suite_drive.api.list.trash',
   cache: 'trash-folder-contents',
   makeParams: (params) => {
     return { ...params }
@@ -156,7 +156,7 @@ const updateMoved = (new_parent) => {
   // No further mutation of the resource object can take place
   createResource({
     ...COMMON_OPTIONS,
-    url: 'suite.drive.api.list.files',
+    url: 'suite.suite_drive.api.list.files',
     makeParams: (params) => ({
       ...params,
       entity_name: new_parent,
@@ -176,7 +176,7 @@ const updateMoved = (new_parent) => {
 }
 
 export const toggleFav = createResource({
-  url: 'suite.drive.api.files.set_favourite',
+  url: 'suite.suite_drive.api.files.set_favourite',
   makeParams(data) {
     if (!data) {
       getFavourites.setData([])
@@ -223,7 +223,7 @@ export const toggleFav = createResource({
 })
 
 export const clearRecent = createResource({
-  url: 'suite.drive.api.files.remove_recents',
+  url: 'suite.suite_drive.api.files.remove_recents',
   makeParams: (data) => {
     if (!data) {
       getRecents.setData([])
@@ -243,7 +243,7 @@ export const clearRecent = createResource({
 })
 
 export const clearTrash = createResource({
-  url: 'suite.drive.api.files.delete_entities',
+  url: 'suite.suite_drive.api.files.delete_entities',
   makeParams: (data) => {
     if (!data) {
       getTrash.setData([])
@@ -277,7 +277,7 @@ export const createSheet = createResource({
 
 
 export const move = createResource({
-  url: 'suite.drive.api.files.move',
+  url: 'suite.suite_drive.api.files.move',
   onSuccess(data) {
     toast('Moved to ' + data.file_name, {
       action: {
@@ -296,11 +296,11 @@ export const move = createResource({
 
 export const translate = createResource({
   method: 'GET',
-  url: '/api/method/suite.drive.api.files.translate_old_name',
+  url: '/api/method/suite.suite_drive.api.files.translate_old_name',
 })
 
 export const storageBar = createResource({
-  url: 'suite.drive.api.storage.storage_bar_data',
+  url: 'suite.suite_drive.api.storage.storage_bar_data',
   method: 'GET',
   cache: 'total_storage',
 })

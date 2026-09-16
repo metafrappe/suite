@@ -187,7 +187,7 @@ const tab = ref('members')
 
 siteUsers.fetch()
 const invites = createResource({
-  url: 'suite.drive.api.product.get_pending_invites',
+  url: 'suite.suite_drive.api.product.get_pending_invites',
 })
 isAdmin.fetch(null, {
   // Pending invites are admin-only; only fetch them once the user qualifies.
@@ -234,7 +234,7 @@ function extractEmails() {
 }
 
 const inviteUsers = createResource({
-  url: 'suite.drive.api.product.invite_users',
+  url: 'suite.suite_drive.api.product.invite_users',
   onSuccess: () => {
     invites.fetch()
     toast('Invite sent!')

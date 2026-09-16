@@ -142,13 +142,13 @@ const props = defineProps({
 
 // Refactor to share with ShareDialog
 const getGeneralAccess = createResource({
-  url: 'suite.drive.api.permissions.get_general_access',
+  url: 'suite.suite_drive.api.permissions.get_general_access',
   params: { entity: props.entity.name },
   auto: true,
 })
 
 const userAccess = createResource({
-  url: 'suite.drive.api.permissions.get_shared_with_list',
+  url: 'suite.suite_drive.api.permissions.get_shared_with_list',
   params: { entity: props.entity.name },
   auto: true,
 })

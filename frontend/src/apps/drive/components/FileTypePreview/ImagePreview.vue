@@ -37,7 +37,7 @@ async function fetchContent() {
     'X-Frappe-Site-Name': window.location.hostname,
   }
   const res = await fetch(
-    `/api/method/suite.drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`,
+    `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`,
     {
       method: 'GET',
       headers,

@@ -121,14 +121,14 @@ ignore_file_permissions = True
 # ============================================================================
 permission_query_conditions = {
     # drive
-    "File": "suite.drive.utils.overrides.filter_file",
-    "Drive Permission": "suite.drive.utils.overrides.filter_drive_permission",
-    "Drive Settings": "suite.drive.utils.overrides.filter_drive_settings",
-    "Drive User Invitation": "suite.drive.utils.overrides.filter_drive_invitation",
-    "Drive Entity Activity Log": "suite.drive.utils.overrides.filter_activity_log",
-    "Drive Favourite": "suite.drive.utils.overrides.filter_drive_favourite",
-    "Drive Entity Log": "suite.drive.utils.overrides.filter_drive_recent",
-    "Drive Notification": "suite.drive.utils.overrides.filter_drive_notif",
+    "File": "suite.suite_drive.utils.overrides.filter_file",
+    "Drive Permission": "suite.suite_drive.utils.overrides.filter_drive_permission",
+    "Drive Settings": "suite.suite_drive.utils.overrides.filter_drive_settings",
+    "Drive User Invitation": "suite.suite_drive.utils.overrides.filter_drive_invitation",
+    "Drive Entity Activity Log": "suite.suite_drive.utils.overrides.filter_activity_log",
+    "Drive Favourite": "suite.suite_drive.utils.overrides.filter_drive_favourite",
+    "Drive Entity Log": "suite.suite_drive.utils.overrides.filter_drive_recent",
+    "Drive Notification": "suite.suite_drive.utils.overrides.filter_drive_notif",
     # slides
     "Presentation": "suite.slides.doctype.presentation.presentation.get_permission_query_conditions",
     # writer
@@ -139,8 +139,8 @@ permission_query_conditions = {
     "Sheet Op Log": "suite.sheets.permissions.sheet_op_log_query",
     "Sheet Snapshot": "suite.sheets.permissions.sheet_snapshot_query",
     # meet
-    "Meet Room": "suite.meet.doctype.meet_room.meet_room.get_permission_query_conditions",
-    "Meet Recording": "suite.meet.doctype.meet_recording.meet_recording.get_permission_query_conditions",
+    "Meet Room": "suite.suite_meet.doctype.meet_room.meet_room.get_permission_query_conditions",
+    "Meet Recording": "suite.suite_meet.doctype.meet_recording.meet_recording.get_permission_query_conditions",
     # mail
     "JMAP Account": "suite.mail.doctype.jmap_account.jmap_account.get_permission_query_condition",
     "Mail Sync History": "suite.mail.doctype.mail_sync_history.mail_sync_history.get_permission_query_condition",
@@ -153,23 +153,23 @@ permission_query_conditions = {
 # ============================================================================
 has_permission = {
     # drive
-    "File": "suite.drive.api.permissions.user_has_permission",
-    "Drive Permission": "suite.drive.api.permissions.drive_permission_has_permission",
-    "Drive Entity Activity Log": "suite.drive.api.permissions.activity_log_has_permission",
-    "Drive Settings": "suite.drive.api.permissions.drive_settings_has_permission",
-    "Drive User Invitation": "suite.drive.api.permissions.drive_invitation_has_permission",
+    "File": "suite.suite_drive.api.permissions.user_has_permission",
+    "Drive Permission": "suite.suite_drive.api.permissions.drive_permission_has_permission",
+    "Drive Entity Activity Log": "suite.suite_drive.api.permissions.activity_log_has_permission",
+    "Drive Settings": "suite.suite_drive.api.permissions.drive_settings_has_permission",
+    "Drive User Invitation": "suite.suite_drive.api.permissions.drive_invitation_has_permission",
     # slides
     "Presentation": "suite.slides.doctype.presentation.presentation.has_permission",
     # writer
-    "Writer Document": "suite.drive.overrides.file.content_has_permission",
+    "Writer Document": "suite.suite_drive.overrides.file.content_has_permission",
     "Writer Version": "suite.writer.overrides.version_has_permission",
     "Writer Template": "suite.writer.overrides.template_has_permission",
     # sheets
     "Sheet Op Log": "suite.sheets.permissions.sheet_op_log_has_permission",
     "Sheet Snapshot": "suite.sheets.permissions.sheet_snapshot_has_permission",
     # meet
-    "Meet Room": "suite.meet.doctype.meet_room.meet_room.has_permission",
-    "Meet Recording": "suite.meet.doctype.meet_recording.meet_recording.has_permission",
+    "Meet Room": "suite.suite_meet.doctype.meet_room.meet_room.has_permission",
+    "Meet Recording": "suite.suite_meet.doctype.meet_recording.meet_recording.has_permission",
     # mail
     "JMAP Account": "suite.mail.doctype.jmap_account.jmap_account.has_permission",
     "Address Book": "suite.mail.doctype.address_book.address_book.has_permission",
@@ -193,7 +193,7 @@ has_permission = {
 # Override standard doctype classes (drive)
 # ============================================================================
 override_doctype_class = {
-    "File": "suite.drive.overrides.file.File",
+    "File": "suite.suite_drive.overrides.file.File",
 }
 
 # ============================================================================
@@ -223,15 +223,15 @@ override_whitelisted_methods = {
 # ============================================================================
 doc_events = {
     "File": {
-        "on_update": "suite.meet.recording.ingest.delete_recording_metadata_for_removed_artifact",
+        "on_update": "suite.suite_meet.recording.ingest.delete_recording_metadata_for_removed_artifact",
     },
     "User Group": {
-        "on_update": "suite.drive.utils.clear_user_group_cache",
-        "on_trash": "suite.drive.utils.clear_user_group_cache",
+        "on_update": "suite.suite_drive.utils.clear_user_group_cache",
+        "on_trash": "suite.suite_drive.utils.clear_user_group_cache",
     },
     "Presentation": {
-        "on_update": ["suite.drive.overrides.file.sync_content_file"],
-        "on_trash": ["suite.drive.overrides.file.sync_content_file"],
+        "on_update": ["suite.suite_drive.overrides.file.sync_content_file"],
+        "on_trash": ["suite.suite_drive.overrides.file.sync_content_file"],
     },
     "Sheet": {
         # Same content-app wiring as Presentation: on_update mirrors title +
@@ -239,8 +239,8 @@ doc_events = {
         # delete. Sheets routes its rename and trash/restore through doc.save so
         # these fire; the high-frequency cell-data autosave stays on db.set_value
         # (Drive doesn't track cell data) and deliberately fires nothing.
-        "on_update": ["suite.drive.overrides.file.sync_content_file"],
-        "on_trash": ["suite.drive.overrides.file.sync_content_file"],
+        "on_update": ["suite.suite_drive.overrides.file.sync_content_file"],
+        "on_trash": ["suite.suite_drive.overrides.file.sync_content_file"],
     },
     "User": {
         # Roles are assigned before insert so they are present when Frappe's
@@ -250,7 +250,7 @@ doc_events = {
             "suite.utils.user.assign_suite_role",
         ],
         "after_insert": [
-            "suite.drive.utils.users.create_drive_settings",
+            "suite.suite_drive.utils.users.create_drive_settings",
             "suite.mail.events.create_user_settings",
         ],
         "on_update": [
@@ -289,10 +289,10 @@ on_login = ["suite.mail.doctype.push_subscription.push_subscription.on_login"]
 scheduler_events = {
     "daily": [
         # meet
-        "suite.meet.api.recording.cleanup_failed_recordings",
+        "suite.suite_meet.api.recording.cleanup_failed_recordings",
         # drive
-        "suite.drive.api.scripts.auto_delete_from_trash",
-        "suite.drive.api.scripts.clear_deleted_files",
+        "suite.suite_drive.api.scripts.auto_delete_from_trash",
+        "suite.suite_drive.api.scripts.clear_deleted_files",
         # sheets
         "suite.sheets.versioning.tasks.rollup_snapshots",
         "suite.sheets.versioning.tasks.truncate_op_log",
@@ -306,8 +306,8 @@ scheduler_events = {
     ],
     "hourly": [
         # drive
-        "suite.drive.api.scripts.clear_download_archives",
-        "suite.drive.webdav.locks.purge_expired_locks",
+        "suite.suite_drive.api.scripts.clear_download_archives",
+        "suite.suite_drive.webdav.locks.purge_expired_locks",
         # mail
         "suite.mail.doctype.mail_exchange.mail_exchange.retry_stuck_mail_exchanges",
         "suite.calendar.doctype.calendar_exchange.calendar_exchange.retry_stuck_calendar_exchanges",
@@ -315,8 +315,8 @@ scheduler_events = {
     ],
     "cron": {
         "* * * * *": [
-            "suite.meet.api.recording.reconcile_pending_recordings",
-            "suite.meet.recording.ingest.reconcile_due_finalizations",
+            "suite.suite_meet.api.recording.reconcile_pending_recordings",
+            "suite.suite_meet.recording.ingest.reconcile_due_finalizations",
         ],
         "*/5 * * * *": [
             # mail
@@ -336,11 +336,11 @@ after_app_install = "suite.suite_core.boot.after_app_install"
 extend_bootinfo = "suite.suite_core.boot.extend_bootinfo"
 
 # drive — custom upload + after_request middleware (single definers)
-after_file_upload = "suite.drive.overrides.file.after_file_upload"
-after_request = "suite.drive.api.product.after_request"
+after_file_upload = "suite.suite_drive.overrides.file.after_file_upload"
+after_request = "suite.suite_drive.api.product.after_request"
 
 # drive — WebDAV protocol dispatcher (list hook, additive; answers all verbs under /dav)
-before_request = ["suite.drive.webdav.dispatch.handle_before_request"]
+before_request = ["suite.suite_drive.webdav.dispatch.handle_before_request"]
 
 # drive — the WebDAV dispatcher consumes /dav request bodies itself (frappe skips the
 # body cap and form_dict buffering; a no-op on frappe versions without this hook,
@@ -426,10 +426,10 @@ ALLOWED_PATHS = [
     "/api/method/frappe.website.doctype.web_form.web_form.accept",
     "/api/method/frappe.core.doctype.user.user.test_password_strength",
     "/api/method/frappe.core.doctype.user.user.update_password",
-    "/api/v2/method/suite.meet.api.recording.get_state",
-    "/api/v2/method/suite.meet.api.recording.get_preflight",
-    "/api/v2/method/suite.meet.api.recording.start",
-    "/api/v2/method/suite.meet.api.recording.stop",
+    "/api/v2/method/suite.suite_meet.api.recording.get_state",
+    "/api/v2/method/suite.suite_meet.api.recording.get_preflight",
+    "/api/v2/method/suite.suite_meet.api.recording.start",
+    "/api/v2/method/suite.suite_meet.api.recording.stop",
     "/api/v2/method/suite.api.account.get_logged_in_user",
     "/api/v2/method/suite.calendar.api.get_calendar_events",
     # drive — WebDAV mount root
@@ -444,12 +444,12 @@ ALLOWED_WILDCARD_PATHS = [
     "/api/method/mail.api.",
     "/api/method/suite.calendar.api.",
     # meet — recorder callbacks remain on their existing protocol during the API cutover
-    "/api/method/suite.meet.api.recording.recorder_",
-    "/api/v2/method/suite.meet.api.meeting.",
-    "/api/v2/method/suite.meet.api.schedule.",
-    "/api/v2/method/suite.meet.api.test_helpers.",
+    "/api/method/suite.suite_meet.api.recording.recorder_",
+    "/api/v2/method/suite.suite_meet.api.meeting.",
+    "/api/v2/method/suite.suite_meet.api.schedule.",
+    "/api/v2/method/suite.suite_meet.api.test_helpers.",
     "/api/v2/document/Meet%20Room/",
-    "/api/method/suite.drive.api.",
+    "/api/method/suite.suite_drive.api.",
     "/api/method/suite.writer.api.",
     # writer — backward-compatible prefix for embed URLs stored in old documents
     # (see override_whitelisted_methods).

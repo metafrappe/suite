@@ -33,7 +33,7 @@ const registerE2EEDeviceCall = useCall<unknown, {
 	device_id: string;
 	ed25519_public_key: string;
 }>({
-	url: "/api/v2/method/suite.meet.api.meeting.register_e2ee_device",
+	url: "/api/v2/method/suite.suite_meet.api.meeting.register_e2ee_device",
 	method: "POST",
 	immediate: false,
 });

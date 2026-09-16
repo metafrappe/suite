@@ -69,10 +69,10 @@ def after_install():
     any app's after_install runs.
     """
     from suite.calendar.install import after_install as calendar_after_install
-    from suite.drive.install import after_install as drive_after_install
-    from suite.drive.install import ensure_custom_fields
+    from suite.suite_drive.install import after_install as drive_after_install
+    from suite.suite_drive.install import ensure_custom_fields
     from suite.mail.install import after_install as mail_after_install
-    from suite.meet.install import after_install as meet_after_install
+    from suite.suite_meet.install import after_install as meet_after_install
 
     _run("drive.ensure_custom_fields", ensure_custom_fields)
     _run("drive.after_install", drive_after_install)
@@ -90,7 +90,7 @@ def after_migrate():
 
 def after_app_install(app_name=None):
     """Run every former app's after_app_install handler, in order."""
-    from suite.meet.utils import after_app_install as meet_after_app_install
+    from suite.suite_meet.utils import after_app_install as meet_after_app_install
 
     _run("meet.after_app_install", meet_after_app_install, app_name)
 

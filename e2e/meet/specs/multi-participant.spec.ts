@@ -16,7 +16,7 @@ test.describe("Multi participant", () => {
 		const meetingId = await createMeeting();
 		const guest = await createParticipant();
 		let accessChecks = 0;
-		await guest.page.route("**/api/v2/method/suite.meet.api.meeting.check_meeting_access**", (route) => {
+		await guest.page.route("**/api/v2/method/suite.suite_meet.api.meeting.check_meeting_access**", (route) => {
 			accessChecks++;
 			return route.fulfill({ status: 503, contentType: "application/json", body: "{}" });
 		});
@@ -41,7 +41,7 @@ test.describe("Multi participant", () => {
 		await loginViaApi(guest.context.request, meetHost);
 		await guest.page.goto(appUrl("/meet/"));
 		const response = await guest.page.evaluate(async (id) => {
-			const result = await fetch(`/api/v2/method/suite.meet.api.meeting.get_sfu_presence_preview_token?meeting_id=${encodeURIComponent(id)}`);
+			const result = await fetch(`/api/v2/method/suite.suite_meet.api.meeting.get_sfu_presence_preview_token?meeting_id=${encodeURIComponent(id)}`);
 			return { status: result.status, body: await result.json() };
 		}, meetingId);
 		expect(response.status).toBe(200);

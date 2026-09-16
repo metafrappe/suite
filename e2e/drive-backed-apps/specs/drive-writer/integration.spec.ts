@@ -77,7 +77,7 @@ test("renames, moves, trashes, restores, and reopens a Writer document from Driv
 	await renameInput.fill(renamedTitle);
 	const [renameResponse] = await Promise.all([
 		owner.page.waitForResponse(
-			(response) => response.url().includes("suite.drive.api.files.rename"),
+			(response) => response.url().includes("suite.suite_drive.api.files.rename"),
 		),
 		renameInput.press("Enter"),
 	]);
@@ -88,7 +88,7 @@ test("renames, moves, trashes, restores, and reopens a Writer document from Driv
 	expect(await fetchedEmbed.text()).toBe(embedContent);
 
 	const moveResponse = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.move",
+		"/api/method/suite.suite_drive.api.files.move",
 		{
 			data: {
 				entity_names: [file.name],
@@ -118,7 +118,7 @@ test("renames, moves, trashes, restores, and reopens a Writer document from Driv
 	fetchedEmbed = await owner.page.request.get(embed.file_url);
 	expect(fetchedEmbed.ok()).toBe(false);
 	const restoreResponse = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.remove_or_restore",
+		"/api/method/suite.suite_drive.api.files.remove_or_restore",
 		{ data: { entity_names: [file.name] } },
 	);
 	if (!restoreResponse.ok()) throw new Error(await restoreResponse.text());

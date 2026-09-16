@@ -2,7 +2,7 @@ from pathlib import Path
 
 import frappe
 
-SCHEDULER_SMOKE_METHOD = "suite.meet.api.recording.reconcile_pending_recordings"
+SCHEDULER_SMOKE_METHOD = "suite.suite_meet.api.recording.reconcile_pending_recordings"
 
 
 def enqueue_worker_smoke() -> str:

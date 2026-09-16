@@ -26,7 +26,7 @@ test("sharing a document notifies the recipient", async ({
 	await expect
 		.poll(async () => {
 			const response = await collaborator.page.request.get(
-				"/api/method/suite.drive.api.notifications.get_notifications",
+				"/api/method/suite.suite_drive.api.notifications.get_notifications",
 			);
 			if (!response.ok()) return [];
 			const rows = await frappeData<DriveNotification[]>(response).catch(() => []);
@@ -42,7 +42,7 @@ test("sharing a document notifies the recipient", async ({
 	await expect
 		.poll(async () => {
 			const response = await collaborator.page.request.get(
-				"/api/method/suite.drive.api.notifications.get_notifications",
+				"/api/method/suite.suite_drive.api.notifications.get_notifications",
 			);
 			if (!response.ok()) return undefined;
 			const rows = await frappeData<DriveNotification[]>(response).catch(() => []);

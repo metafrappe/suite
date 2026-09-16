@@ -15,7 +15,7 @@ async function share(
 	access: Record<string, number>,
 ): Promise<void> {
 	const response = await request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{ form: { entity_name: entity, method: "share", user, ...access } },
 	);
 	if (!response.ok())
@@ -27,7 +27,7 @@ async function canRead(
 	entity: string,
 ): Promise<boolean> {
 	const response = await request.get(
-		"/api/method/suite.drive.api.permissions.get_entity_with_permissions",
+		"/api/method/suite.suite_drive.api.permissions.get_entity_with_permissions",
 		{ params: { entity_name: entity } },
 	);
 	return response.ok();
@@ -40,7 +40,7 @@ async function makeGroup(
 	members: string[],
 ): Promise<{ name: string; member_count: number }> {
 	const response = await request.post(
-		"/api/method/suite.drive.e2e_api.create_user_group",
+		"/api/method/suite.suite_drive.e2e_api.create_user_group",
 		{ form: { run_id: runId, name, members: members.join(",") } },
 	);
 	return frappeData(response);
@@ -68,7 +68,7 @@ test("a direct share grants read and unsharing takes it away", async ({
 	expect(Boolean(shared.write)).toBe(false);
 
 	await owner.page.request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: folder.name,
@@ -104,7 +104,7 @@ test("a share inherits to children until an explicit deny", async ({
 	expect(await canRead(collaborator.page.request, child.name)).toBe(true);
 
 	await owner.page.request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: child.name,
@@ -143,7 +143,7 @@ test("sharing with a user group reaches its members only", async ({
 
 	// The owner is not in the group, so the row is listed as a group, not a person.
 	const response = await owner.page.request.get(
-		"/api/method/suite.drive.api.permissions.get_shared_with_list",
+		"/api/method/suite.suite_drive.api.permissions.get_shared_with_list",
 		{ params: { entity: folder.name } },
 	);
 	const rows = await frappeData<Array<Record<string, unknown>>>(response);
@@ -174,7 +174,7 @@ test("a group deny outranks a group grant on the same folder", async ({
 	expect(await canRead(collaborator.page.request, folder.name)).toBe(true);
 
 	await owner.page.request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: folder.name,
@@ -206,7 +206,7 @@ test("you cannot grant access you do not hold yourself", async ({
 	});
 
 	const response = await collaborator.page.request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: folder.name,

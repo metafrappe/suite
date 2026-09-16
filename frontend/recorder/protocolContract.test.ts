@@ -17,7 +17,7 @@ type VectorSet = { accepted: unknown[]; rejected: unknown[] };
 
 const contract = JSON.parse(
 	readFileSync(
-		resolve(process.cwd(), "../suite/meet/recording/contracts/v1.json"),
+		resolve(process.cwd(), "../suite/suite_meet/recording/contracts/v1.json"),
 		"utf8",
 	),
 ) as {

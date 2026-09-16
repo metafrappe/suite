@@ -110,7 +110,7 @@ const open = defineModel()
 const searchResults = createResource({
   auto: false,
   method: 'POST',
-  url: 'suite.drive.api.files.search',
+  url: 'suite.suite_drive.api.files.search',
   // Typing fires this on every keystroke, and the endpoint resolves access one
   // row at a time - a wide query is the most expensive call in Drive. Wait for
   // a pause first, as the list resources do. Short enough to still feel

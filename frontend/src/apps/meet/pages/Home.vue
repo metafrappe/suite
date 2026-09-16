@@ -217,7 +217,7 @@ const firstName = computed(() => {
 });
 
 const createMeeting = useCall<string, { meeting_type: "open" | "restricted" }>({
-	url: "/api/v2/method/suite.meet.api.meeting.create",
+	url: "/api/v2/method/suite.suite_meet.api.meeting.create",
 	method: "POST",
 	immediate: false,
 	onSuccess: (meeting_code: string) => {
@@ -274,7 +274,7 @@ const scheduledParticipants = computed(() => {
 });
 
 const scheduleMeeting = useCall({
-	url: "/api/v2/method/suite.meet.api.schedule.create_scheduled_meeting",
+	url: "/api/v2/method/suite.suite_meet.api.schedule.create_scheduled_meeting",
 	method: "POST",
 	params: () => ({
 		account: calendarStore.accountId,

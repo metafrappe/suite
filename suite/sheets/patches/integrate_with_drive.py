@@ -1,6 +1,6 @@
 import frappe
 
-from suite.drive.utils import STATUS_TRASHED, create_drive_file, get_new_file_name, get_user_folder
+from suite.suite_drive.utils import STATUS_TRASHED, create_drive_file, get_new_file_name, get_user_folder
 
 
 def execute():

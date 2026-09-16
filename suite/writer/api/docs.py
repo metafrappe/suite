@@ -6,16 +6,16 @@ import markdown
 import mimemapper
 from markdown.extensions.wikilinks import WikiLinkExtension
 
-from suite.drive.api.files import get_new_title
-from suite.drive.api.permissions import (
+from suite.suite_drive.api.files import get_new_title
+from suite.suite_drive.api.permissions import (
     get_entity_with_permissions,
     user_has_permission,
 )
-from suite.drive.utils import (
+from suite.suite_drive.utils import (
     create_drive_file,
     get_user_folder,
 )
-from suite.drive.utils.files import FileManager, storage_key
+from suite.suite_drive.utils.files import FileManager, storage_key
 
 # To be moved to mimemapper
 QUICK_MAP = {

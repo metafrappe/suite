@@ -1,6 +1,6 @@
 import frappe
 
-from suite.drive.utils import create_drive_file, get_user_folder
+from suite.suite_drive.utils import create_drive_file, get_user_folder
 
 
 def execute():

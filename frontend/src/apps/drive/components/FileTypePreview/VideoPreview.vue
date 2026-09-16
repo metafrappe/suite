@@ -33,7 +33,7 @@ const props = defineProps({
 })
 const loading = ref(true)
 const src = ref(
-  `/api/method/suite.drive.api.files.stream_file_content?entity_name=${props.previewEntity.name}`
+  `/api/method/suite.suite_drive.api.files.stream_file_content?entity_name=${props.previewEntity.name}`
 )
 const type = ref(
   props.previewEntity.mime_type === 'video/quicktime' ? 'video/mp4' : props.previewEntity.mime_type
@@ -51,7 +51,7 @@ watch(
   () => props.previewEntity,
   (newValue) => {
     loading.value = true
-    src.value = `/api/method/suite.drive.api.files.stream_file_content?entity_name=${newValue.name}`
+    src.value = `/api/method/suite.suite_drive.api.files.stream_file_content?entity_name=${newValue.name}`
     type.value = newValue.mime_type
   }
 )

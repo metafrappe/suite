@@ -1,7 +1,7 @@
 import frappe
 
-from suite.drive.api.permissions import user_has_permission
-from suite.drive.overrides.file import File, content_query_conditions
+from suite.suite_drive.api.permissions import user_has_permission
+from suite.suite_drive.overrides.file import File, content_query_conditions
 
 READ_PTYPES = frozenset({"read", "report", "export", "email", "print", "select"})
 

@@ -4,19 +4,19 @@ import { toast } from '@/apps/drive/utils/toasts'
 import { useSessionStore } from '@/boot/session'
 
 export const notifCount = createResource({
-  url: '/api/method/suite.drive.api.notifications.get_unread_count',
+  url: '/api/method/suite.suite_drive.api.notifications.get_unread_count',
   method: 'GET',
   cache: 'notif-count',
 })
 
 export const settings = createResource({
-  url: '/api/method/suite.drive.api.product.get_settings',
+  url: '/api/method/suite.suite_drive.api.product.get_settings',
   method: 'GET',
   cache: 'settings',
 })
 
 export const setSettings = createResource({
-  url: '/api/method/suite.drive.api.product.set_settings',
+  url: '/api/method/suite.suite_drive.api.product.set_settings',
   method: 'POST',
   onSuccess: () => {
     settings.fetch()
@@ -24,7 +24,7 @@ export const setSettings = createResource({
 })
 
 export const siteUsers = createResource({
-  url: 'suite.drive.api.product.get_users',
+  url: 'suite.suite_drive.api.product.get_users',
   method: 'GET',
   transform: (data) => {
     data.map((item) => {
@@ -35,7 +35,7 @@ export const siteUsers = createResource({
 })
 
 export const getUserGroups = createResource({
-  url: 'suite.drive.api.product.get_user_groups',
+  url: 'suite.suite_drive.api.product.get_user_groups',
   method: 'GET',
   transform: (data) =>
     data.map((g) => ({
@@ -49,24 +49,24 @@ export const getUserGroups = createResource({
 })
 
 export const getInvites = createResource({
-  url: 'suite.drive.api.product.get_my_invites',
+  url: 'suite.suite_drive.api.product.get_my_invites',
 })
 
 export const acceptInvite = createResource({
-  url: 'suite.drive.api.product.accept_invite',
+  url: 'suite.suite_drive.api.product.accept_invite',
 })
 
 export const rejectInvite = createResource({
-  url: 'suite.drive.api.product.reject_invite',
+  url: 'suite.suite_drive.api.product.reject_invite',
   onSuccess: () => toast('Removed invite'),
 })
 
 export const isAdmin = createResource({
-  url: 'suite.drive.api.product.is_site_admin',
+  url: 'suite.suite_drive.api.product.is_site_admin',
 })
 
 export const webdavConfig = createResource({
-  url: 'suite.drive.api.product.webdav_config',
+  url: 'suite.suite_drive.api.product.webdav_config',
   cache: 'drive-webdav-config',
 })
 
@@ -77,12 +77,12 @@ export const apps = {
 }
 
 export const diskSettings = createResource({
-  url: 'suite.drive.api.product.disk_settings',
+  url: 'suite.suite_drive.api.product.disk_settings',
   method: 'GET',
   cache: 'disk-settings',
 })
 
 export const getDiskSettings = createResource({
-  url: 'suite.drive.api.product.disk_settings',
+  url: 'suite.suite_drive.api.product.disk_settings',
   method: 'GET',
 })

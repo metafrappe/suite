@@ -110,7 +110,7 @@ function mountPage(grouper: (rows: unknown[]) => unknown) {
     loading: false,
     paginated: false,
     params: {},
-    url: 'suite.drive.api.list.recents',
+    url: 'suite.suite_drive.api.list.recents',
     fetch: vi.fn(),
     setData: vi.fn(),
   }
@@ -196,7 +196,7 @@ function mountPaginated(firstPage: {
     loading: false,
     paginated: true,
     params: {},
-    url: 'suite.drive.api.list.files',
+    url: 'suite.suite_drive.api.list.files',
     // Mirrors frappe-ui: onSuccess receives the untransformed payload.
     fetch: vi.fn((_params, options) => options?.onSuccess?.(firstPage)),
     setData: vi.fn(),

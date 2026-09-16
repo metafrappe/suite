@@ -187,7 +187,7 @@ const generalPerms = ref('reader')
 const generalAccessLoaded = ref(false)
 
 createResource({
-  url: 'suite.drive.api.permissions.get_general_access',
+  url: 'suite.suite_drive.api.permissions.get_general_access',
   params: { entity: props.file.name },
   auto: true,
   onSuccess(data) {

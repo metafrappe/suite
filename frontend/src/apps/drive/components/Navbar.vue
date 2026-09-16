@@ -215,7 +215,7 @@ const defaultActions = computed(() => {
           icon: LucideCornerLeftUp,
           onClick: () => {
             window.open(
-              '/api/method/suite.drive.api.files.redirect_to_original?file_id=' + rootEntity.value.name,
+              '/api/method/suite.suite_drive.api.files.redirect_to_original?file_id=' + rootEntity.value.name,
               '_blank'
             )
           },

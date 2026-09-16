@@ -1,4 +1,4 @@
-import type { RecordingProofChallenge } from "../../suite/meet/types";
+import type { RecordingProofChallenge } from "../../suite/suite_meet/types";
 
 export interface RecorderConfig {
 	job: string;

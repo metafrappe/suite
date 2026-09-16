@@ -121,7 +121,7 @@ const generateKeys = createResource({
 })
 
 const setGlobal = createResource({
-	url: 'suite.drive.api.product.set_webdav_enabled',
+	url: 'suite.suite_drive.api.product.set_webdav_enabled',
 	onSuccess: () => webdavConfig.fetch(),
 })
 

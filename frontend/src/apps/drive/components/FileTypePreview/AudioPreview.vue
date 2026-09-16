@@ -27,7 +27,7 @@ const props = defineProps({
 })
 const loading = ref(true)
 const src = ref(
-  `/api/method/suite.drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`
+  `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`
 )
 const type = ref('audio/mp3')
 const mediaRef = ref('')
@@ -43,7 +43,7 @@ watch(
   () => props.previewEntity,
   (newValue) => {
     loading.value = true
-    src.value = `/api/method/suite.drive.api.files.get_file_content?entity_name=${newValue.name}`
+    src.value = `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${newValue.name}`
     type.value = newValue.mime_type
   }
 )

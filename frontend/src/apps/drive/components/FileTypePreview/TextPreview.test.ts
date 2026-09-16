@@ -49,7 +49,7 @@ describe('Drive TextPreview', () => {
     await nextTick()
 
     expect(fetchMock).toHaveBeenCalledWith(
-      '/api/method/suite.drive.api.files.get_file_content?entity_name=file-a',
+      '/api/method/suite.suite_drive.api.files.get_file_content?entity_name=file-a',
       expect.objectContaining({
         method: 'GET',
         headers: expect.objectContaining({ Range: 'bytes=0-10000000' }),

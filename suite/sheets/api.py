@@ -411,7 +411,7 @@ def create_sheet(title: str = "", parent: str = "") -> str:
     # create_document. "{}" is a valid empty workbook — the editor's loader
     # falls back to a fresh Sheet1 when the packed payload is absent.
     if parent:
-        from suite.drive.api.permissions import user_has_permission
+        from suite.suite_drive.api.permissions import user_has_permission
 
         if not user_has_permission(parent, "upload"):
             frappe.throw(

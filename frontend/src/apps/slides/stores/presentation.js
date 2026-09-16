@@ -433,7 +433,7 @@ const initPresentationDoc = async (id, readonly = false, load = startLoad()) => 
 	clearSaveFailure()
 	showPresentation(id, loaded)
 	frappeRequest({
-		url: 'suite.drive.api.files.track_visit',
+		url: 'suite.suite_drive.api.files.track_visit',
 		params: { doctype: 'Presentation', docname: id },
 	}).catch(() => {})
 	return loaded.doc

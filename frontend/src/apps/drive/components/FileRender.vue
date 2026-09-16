@@ -48,7 +48,7 @@ const error = computed(() => {
 })
 
 const download = () => {
-  window.location.href = `/api/method/suite.drive.api.files.get_file_content?entity_name=${props.previewEntity.name}&trigger_download=1`
+  window.location.href = `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${props.previewEntity.name}&trigger_download=1`
 }
 
 const RENDERS = {

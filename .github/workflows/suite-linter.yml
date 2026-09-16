@@ -109,8 +109,8 @@ jobs:
           mkdir -p test-results
           status=0
           yarn audit --groups dependencies --level high 2>&1 | tee test-results/yarn-audit.txt || status=1
-          yarn --cwd suite/meet/sfu-server audit --groups dependencies --level high 2>&1 | tee -a test-results/yarn-audit.txt || status=1
-          yarn --cwd suite/meet/recorder-server audit --groups dependencies --level high 2>&1 | tee -a test-results/yarn-audit.txt || status=1
+          yarn --cwd suite/suite_meet/sfu-server audit --groups dependencies --level high 2>&1 | tee -a test-results/yarn-audit.txt || status=1
+          yarn --cwd suite/suite_meet/recorder-server audit --groups dependencies --level high 2>&1 | tee -a test-results/yarn-audit.txt || status=1
           exit "$status"
 
       - name: Upload dependency audit

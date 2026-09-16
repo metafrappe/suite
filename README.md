@@ -129,7 +129,7 @@ bench build --app suite
 
 #### Meet SFU
 
-Meet requires a separate mediasoup SFU server for video calls. Follow the [Frappe Meet SFU setup guide](suite/meet/sfu-server/README.md) to configure and run it.
+Meet requires a separate mediasoup SFU server for video calls. Follow the [Frappe Meet SFU setup guide](suite/suite_meet/sfu-server/README.md) to configure and run it.
 
 ## Contributing
 

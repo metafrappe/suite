@@ -14,9 +14,9 @@ e2e/*
 
 !suite/
 suite/*
-!suite/meet/
-suite/meet/*
-!suite/meet/sfu-server/
-suite/meet/sfu-server/*
-!suite/meet/sfu-server/package.json
-!suite/meet/sfu-server/yarn.lock
+!suite/suite_meet/
+suite/suite_meet/*
+!suite/suite_meet/sfu-server/
+suite/suite_meet/sfu-server/*
+!suite/suite_meet/sfu-server/package.json
+!suite/suite_meet/sfu-server/yarn.lock

@@ -24,7 +24,7 @@ export function confirmRestore(entities, { onSuccess } = {}) {
     }.`,
     confirmLabel: 'Restore',
     onConfirm: async () => {
-      await call('suite.drive.api.files.remove_or_restore', {
+      await call('suite.suite_drive.api.files.remove_or_restore', {
         entity_names: entityNames(entities),
       })
       const names = entities.map((entity) => entity.name)
@@ -43,7 +43,7 @@ export function confirmRemove(entities, { onSuccess } = {}) {
     confirmLabel: 'Move to Trash',
     theme: 'red',
     onConfirm: async () => {
-      await call('suite.drive.api.files.remove_or_restore', {
+      await call('suite.suite_drive.api.files.remove_or_restore', {
         entity_names: entityNames(entities),
       })
       // Only patch the trash cache if it was ever fetched — `data` is null
@@ -72,7 +72,7 @@ export function confirmDeleteForever(entities, { onSuccess } = {}) {
     message: `${entityLabel(entities)} will be deleted — you can no longer access it. This is an irreversible action.`,
     confirmLabel: 'Delete forever',
     onConfirm: async () => {
-      await call('suite.drive.api.files.delete_entities', {
+      await call('suite.suite_drive.api.files.delete_entities', {
         entity_names: entityNames(entities),
       })
       toast.success(`Deleted ${label}.`)

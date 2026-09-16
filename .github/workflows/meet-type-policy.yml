@@ -9,10 +9,10 @@ on:
     paths:
       - "frontend/src/apps/meet/**"
       - "frontend/recorder/**"
-      - "suite/meet/types/**"
-      - "suite/meet/sfu-server/src/**"
-      - "suite/meet/recorder-server/src/**"
-      - "suite/meet/type-policy/**"
+      - "suite/suite_meet/types/**"
+      - "suite/suite_meet/sfu-server/src/**"
+      - "suite/suite_meet/recorder-server/src/**"
+      - "suite/suite_meet/type-policy/**"
       - "e2e/meet/**"
       - "package.json"
       - "yarn.lock"
@@ -21,10 +21,10 @@ on:
     paths:
       - "frontend/src/apps/meet/**"
       - "frontend/recorder/**"
-      - "suite/meet/types/**"
-      - "suite/meet/sfu-server/src/**"
-      - "suite/meet/recorder-server/src/**"
-      - "suite/meet/type-policy/**"
+      - "suite/suite_meet/types/**"
+      - "suite/suite_meet/sfu-server/src/**"
+      - "suite/suite_meet/recorder-server/src/**"
+      - "suite/suite_meet/type-policy/**"
       - "e2e/meet/**"
       - "package.json"
       - "yarn.lock"
@@ -60,7 +60,7 @@ jobs:
           node --test \
             --test-reporter=spec --test-reporter-destination=stdout \
             --test-reporter=junit --test-reporter-destination=test-results/meet-type-policy.xml \
-            suite/meet/type-policy/check.test.mjs
+            suite/suite_meet/type-policy/check.test.mjs
 
       - name: Check Meet types
         run: yarn check:meet-types

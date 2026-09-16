@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-25 15:44:00.661051",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+  "field_order": [
+    "section_break_voms",
+    "title",
+    "meeting_type",
+   "allow_guest",
+   "host_only_chat",
+   "column_break_1",
+   "e2ee_section",
+     "e2ee_enabled",
+    "calendar_event",
+    "users_section",
+   "co_hosts",
+   "members",
+   "banned_users",
+   "waiting_room"
+  ],
+ "fields": [
+  {
+   "fieldname": "section_break_voms",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "default": "open",
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Meeting Type",
+   "options": "open\nrestricted",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_guest",
+   "fieldtype": "Check",
+   "label": "Allow Guest"
+  },
+  {
+   "default": "0",
+   "fieldname": "host_only_chat",
+   "fieldtype": "Check",
+   "label": "Host Only Chat"
+  },
+  {
+   "default": "0",
+   "fieldname": "e2ee_enabled",
+   "fieldtype": "Check",
+    "label": "E2EE Enabled",
+    "read_only": 1
+   },
+   {
+    "description": "Opaque Calendar Event identifier used for recording estimates.",
+    "fieldname": "calendar_event",
+    "fieldtype": "Data",
+    "label": "Calendar Event"
+  },
+  {
+    "fieldname": "members",
+    "fieldtype": "Table",
+    "label": "Members",
+    "options": "Meet Room User",
+    "read_only": 1
+  },
+  {
+   "fieldname": "co_hosts",
+   "fieldtype": "Table",
+   "label": "Co-hosts",
+    "options": "Meet Room User"
+  },
+  {
+   "fieldname": "waiting_room",
+   "fieldtype": "Table",
+   "label": "Waiting Room",
+    "options": "Meet Room User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "banned_users",
+   "fieldtype": "Table",
+   "label": "Banned Users",
+    "options": "Meet Room User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e2ee_section",
+   "fieldtype": "Section Break",
+   "label": "E2EE"
+  },
+  {
+   "fieldname": "users_section",
+   "fieldtype": "Section Break",
+   "label": "Users"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-06-04 12:36:16.782160",
+ "modified_by": "Administrator",
+ "module": "Suite Meet",
+  "name": "Meet Room",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "Suite User",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

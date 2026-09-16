@@ -30,7 +30,7 @@ export function usePersistence({ sheet, formats, merge, comments, validation, pr
       const canGz  = isDecompressionSupported()
       const doc    = await call('suite.sheets.api.get_sheet', { name, compressed: canGz ? 1 : 0 })
       frappeRequest({
-        url: 'suite.drive.api.files.track_visit',
+        url: 'suite.suite_drive.api.files.track_visit',
         params: { doctype: 'Sheet', docname: name },
       }).catch(() => {})
       const plain  = canGz ? await decodeFromDownload(doc.sheets_data) : doc.sheets_data

@@ -37,7 +37,7 @@ import type {
 	RecorderStageProducer,
 	RecorderStageProjectionEvent,
 	RecorderStageSnapshot,
-} from "../../suite/meet/types";
+} from "../../suite/suite_meet/types";
 
 export type RecorderState = {
 	participantAdded?: (participant: Participant) => void;

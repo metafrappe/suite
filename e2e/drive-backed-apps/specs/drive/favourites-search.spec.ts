@@ -16,7 +16,7 @@ test("favourite and unfavourite a file toggles its Favourites membership", async
 
 	const favouriteNames = async (): Promise<string[]> => {
 		const response = await owner.page.request.get(
-			"/api/method/suite.drive.api.list.favourites",
+			"/api/method/suite.suite_drive.api.list.favourites",
 		);
 		const rows = await frappeData<Array<{ name: string }>>(response);
 		return rows.map((row) => row.name);
@@ -24,7 +24,7 @@ test("favourite and unfavourite a file toggles its Favourites membership", async
 
 	// Favourite it → appears in Favourites.
 	const fav = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.set_favourite",
+		"/api/method/suite.suite_drive.api.files.set_favourite",
 		{ data: { entities: [{ name: folder.name, is_favourite: true }] } },
 	);
 	expect(fav.ok()).toBe(true);
@@ -32,7 +32,7 @@ test("favourite and unfavourite a file toggles its Favourites membership", async
 
 	// Unfavourite it → gone from Favourites.
 	const unfav = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.set_favourite",
+		"/api/method/suite.suite_drive.api.files.set_favourite",
 		{ data: { entities: [{ name: folder.name, is_favourite: false }] } },
 	);
 	expect(unfav.ok()).toBe(true);
@@ -48,7 +48,7 @@ test("search finds a newly created entity by name", async ({ owner, run }) => {
 	await expect
 		.poll(async () => {
 			const response = await owner.page.request.get(
-				"/api/method/suite.drive.api.files.search",
+				"/api/method/suite.suite_drive.api.files.search",
 				{ params: { query: token } },
 			);
 			if (!response.ok()) return [];

@@ -65,7 +65,7 @@ describe("guest realtime lifecycle", () => {
 		await getApprovedGuestConnectionDetails(session);
 
 		expect(request).toHaveBeenCalledWith(
-			"/api/v2/method/suite.meet.api.meeting.get_approved_guest_connection_details",
+			"/api/v2/method/suite.suite_meet.api.meeting.get_approved_guest_connection_details",
 			{
 				meeting_id: "room-1",
 				guest_id: "guest_private",

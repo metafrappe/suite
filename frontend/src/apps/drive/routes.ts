@@ -110,7 +110,7 @@ export const routes: RouteRecordRaw[] = [
         meta: { allowGuest: true },
         beforeEnter: async (to) => {
           const entity = createResource({
-            url: '/api/method/suite.drive.api.files.get_entity_type',
+            url: '/api/method/suite.suite_drive.api.files.get_entity_type',
             method: 'GET',
             params: {
               entity_name: to.params.entityName,
@@ -185,7 +185,7 @@ export const routes: RouteRecordRaw[] = [
         meta: { allowGuest: true },
         beforeEnter: async (to) => {
           const legacy = createResource({
-            url: 'suite.drive.api.files.resolve_legacy_route',
+            url: 'suite.suite_drive.api.files.resolve_legacy_route',
           })
           const entity = await legacy.fetch({ old_id: to.params.team })
           if (!entity) return { name: 'drive-Home' }

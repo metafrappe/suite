@@ -1,7 +1,7 @@
 import frappe
 
-from suite.drive.api.files import get_file_internal, upload_file
-from suite.drive.api.permissions import user_has_permission
+from suite.suite_drive.api.files import get_file_internal, upload_file
+from suite.suite_drive.api.permissions import user_has_permission
 
 
 @frappe.whitelist()

@@ -2,8 +2,8 @@ import frappe
 from pypika import CustomFunction, Order
 from pypika import functions as fn
 
-from suite.drive.api.permissions import get_user_access
-from suite.drive.utils import FILE_FIELDS, GENERAL_USER, STATUS_ACTIVE
+from suite.suite_drive.api.permissions import get_user_access
+from suite.suite_drive.utils import FILE_FIELDS, GENERAL_USER, STATUS_ACTIVE
 from suite.writer.search import WriterSearch
 
 DriveUser = frappe.qb.DocType("User")

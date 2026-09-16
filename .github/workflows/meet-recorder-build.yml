@@ -26,7 +26,7 @@ on:
       - "frontend/tsconfig.node.json"
       - "frontend/package.json"
       - "frontend/vite.recorder.config.ts"
-      - "suite/meet/recorder-server/**"
+      - "suite/suite_meet/recorder-server/**"
       - "package.json"
       - "yarn.lock"
       - ".github/workflows/meet-recorder-build.yml"
@@ -39,7 +39,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: frappe/suite/meet-recorder-server
+  IMAGE_NAME: frappe/suite/suite_meet-recorder-server
 
 jobs:
   build-and-push:
@@ -77,7 +77,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: suite/meet/recorder-server/Dockerfile
+          file: suite/suite_meet/recorder-server/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

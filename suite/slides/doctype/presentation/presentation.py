@@ -13,9 +13,9 @@ from frappe.core.doctype.file.file import get_local_image
 from frappe.model.document import Document
 from frappe.query_builder.functions import Count
 
-from suite.drive.api.permissions import user_has_permission
-from suite.drive.overrides.file import File as DriveFile
-from suite.drive.overrides.file import content_has_permission, content_query_conditions
+from suite.suite_drive.api.permissions import user_has_permission
+from suite.suite_drive.overrides.file import File as DriveFile
+from suite.suite_drive.overrides.file import content_has_permission, content_query_conditions
 
 SYSTEM_TEMPLATE_TITLES = {"Light", "Dark"}
 MAX_THUMBNAIL_BYTES = 6 * 1024 * 1024

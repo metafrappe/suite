@@ -35,7 +35,7 @@ async function _uploadImage(element, fileId, uploaded) {
 async function _discardUploads(uploaded) {
   if (!uploaded.length) return
   try {
-    await call('suite.drive.api.files.delete_entities', { entity_names: uploaded })
+    await call('suite.suite_drive.api.files.delete_entities', { entity_names: uploaded })
   } catch (e) {
     console.error('Could not remove images from the failed import:', e)
   }

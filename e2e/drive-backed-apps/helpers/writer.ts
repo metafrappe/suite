@@ -28,7 +28,7 @@ export async function shareWriterDocument(
 	options: { user?: string; read: boolean; write?: boolean; comment?: boolean },
 ): Promise<void> {
 	const response = await request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: entityName,

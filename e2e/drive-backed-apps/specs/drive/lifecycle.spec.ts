@@ -18,19 +18,19 @@ test("permanently deleting a trashed entity removes it irrecoverably", async ({
 
 	// Trash, then hard-delete.
 	const trash = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.remove_or_restore",
+		"/api/method/suite.suite_drive.api.files.remove_or_restore",
 		{ data: { entity_names: [folder.name] } },
 	);
 	expect(trash.ok()).toBe(true);
 	const purge = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.delete_entities",
+		"/api/method/suite.suite_drive.api.files.delete_entities",
 		{ data: { entity_names: [folder.name] } },
 	);
 	expect(purge.ok()).toBe(true);
 
 	// The entity is gone — even its owner can no longer resolve it.
 	const lookup = await owner.page.request.get(
-		"/api/method/suite.drive.api.permissions.get_entity_with_permissions",
+		"/api/method/suite.suite_drive.api.permissions.get_entity_with_permissions",
 		{ params: { entity_name: folder.name } },
 	);
 	expect(lookup.ok()).toBe(false);
@@ -51,7 +51,7 @@ test("trashing a folder hides it from Home; restore brings the folder and its ch
 
 	// Trash the parent → it disappears from the Home listing.
 	const trash = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.remove_or_restore",
+		"/api/method/suite.suite_drive.api.files.remove_or_restore",
 		{ data: { entity_names: [parent.name] } },
 	);
 	expect(trash.ok()).toBe(true);
@@ -59,7 +59,7 @@ test("trashing a folder hides it from Home; restore brings the folder and its ch
 
 	// Restore the parent → it returns to Home with its child intact inside it.
 	const restore = await owner.page.request.post(
-		"/api/method/suite.drive.api.files.remove_or_restore",
+		"/api/method/suite.suite_drive.api.files.remove_or_restore",
 		{ data: { entity_names: [parent.name] } },
 	);
 	expect(restore.ok()).toBe(true);

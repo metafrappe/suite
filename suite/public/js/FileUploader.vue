@@ -115,7 +115,7 @@ const here = computed(() => crumbs.value[crumbs.value.length - 1])
 const canUpload = computed(() => true)
 const ready = computed(() => (staged.value ? canUpload.value : !!selected.value))
 onMounted(async () => {
-  const { message } = await frappe.call('suite.drive.api.files.get_root_folder')
+  const { message } = await frappe.call('suite.suite_drive.api.files.get_root_folder')
   roots.value = message || { home: '', root: '' }
   switchTab('home')
 })
@@ -210,7 +210,7 @@ const sortRows = (items) =>
 async function fetchPage(offset) {
   const q = searchText.value.trim()
   if (!here.value.name) return { items: [], more: false }
-  const r = await frappe.call('suite.drive.api.list.files', {
+  const r = await frappe.call('suite.suite_drive.api.list.files', {
     entity_name: here.value.name,
     search: q || undefined,
     start: offset,
@@ -286,7 +286,7 @@ async function driveUpload(file, parent) {
   if (parent) form.append('parent', parent)
   form.append('total_file_size', file.size)
   form.append('uuid', frappe.utils.get_random(10))
-  const res = await fetch('/api/method/suite.drive.api.files.upload_file', {
+  const res = await fetch('/api/method/suite.suite_drive.api.files.upload_file', {
     method: 'POST',
     headers: { 'X-Frappe-CSRF-Token': frappe.csrf_token },
     body: form,

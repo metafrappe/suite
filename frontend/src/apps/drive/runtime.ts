@@ -9,7 +9,7 @@ export function bootstrap() {
 
   if (!window.translatedMessages) {
     createResource({
-      url: 'suite.drive.api.product.get_translations',
+      url: 'suite.suite_drive.api.product.get_translations',
       cache: 'translations',
       transform: (data: unknown) => (window.translatedMessages = data),
     }).fetch()

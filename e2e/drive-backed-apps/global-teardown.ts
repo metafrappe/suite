@@ -20,7 +20,7 @@ export default async function globalTeardown(config: FullConfig): Promise<void> 
 		const api = await request.newContext({ baseURL });
 		await loginViaApi(api, admin);
 		const response = await api.post(
-			"/api/method/suite.drive.e2e_api.cleanup_users",
+			"/api/method/suite.suite_drive.e2e_api.cleanup_users",
 			{ form: { run_id } },
 		);
 		if (!response.ok()) {

@@ -296,7 +296,7 @@ export function getThumbnailUrl({ name, file_type, thumbnail, external }, view =
   let src = ''
   if (external) src = view !== 'list' ? thumbnail : ''
   else if (['Image', 'Video', 'PDF'].includes(file_type))
-    src = `/api/method/suite.drive.api.files.get_thumbnail?entity_name=${name}`
+    src = `/api/method/suite.suite_drive.api.files.get_thumbnail?entity_name=${name}`
   return { src: src || fallback, fallback }
 }
 
@@ -473,7 +473,7 @@ async function uploadImage(file, params) {
   const upload = uploader.upload(file, {
     private: false,
     params,
-    upload_endpoint: '/api/method/suite.drive.api.files.upload_file',
+    upload_endpoint: '/api/method/suite.suite_drive.api.files.upload_file',
   })
   let entity = await new Promise((resolve) => {
     upload.then((data) => {

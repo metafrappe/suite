@@ -52,7 +52,7 @@ repos:
         pass_filenames: false
         files: |
           (?x)^(
-              suite/meet/sfu-server/.*|
+              suite/suite_meet/sfu-server/.*|
               knip\.json|
               package\.json|
               yarn\.lock
@@ -73,14 +73,14 @@ repos:
 
       - id: biome-sfu-server
         name: Biome Check (SFU Server)
-        entry: bash -c 'cd suite/meet/sfu-server && node_modules/.bin/biome check --write --config-path biome.json "${@/#suite\/meet\/sfu-server\//}"' --
+        entry: bash -c 'cd suite/suite_meet/sfu-server && node_modules/.bin/biome check --write --config-path biome.json "${@/#suite\/meet\/sfu-server\//}"' --
         language: system
-        files: "suite/meet/sfu-server/.*\\.(js|ts|json)$"
+        files: "suite/suite_meet/sfu-server/.*\\.(js|ts|json)$"
         exclude: |
           (?x)^(
               .*node_modules.*|
-              suite/meet/sfu-server/dist/.*|
-              suite/meet/sfu-server/tsconfig\.json
+              suite/suite_meet/sfu-server/dist/.*|
+              suite/suite_meet/sfu-server/tsconfig\.json
           )$
 
       - id: meet-type-policy
@@ -92,8 +92,8 @@ repos:
           (?x)^(
               frontend/src/apps/meet/.*\.(ts|tsx|vue)|
               frontend/recorder/.*\.(ts|tsx|vue)|
-              suite/meet/(types|sfu-server/src|recorder-server/src)/.*\.(ts|tsx)|
-              suite/meet/type-policy/.*|
+              suite/suite_meet/(types|sfu-server/src|recorder-server/src)/.*\.(ts|tsx)|
+              suite/suite_meet/type-policy/.*|
               e2e/meet/.*\.(ts|tsx)|
               package\.json|
               yarn\.lock

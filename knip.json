@@ -9,7 +9,7 @@
   "workspaces": {
     ".": {
       "entry": ["realtime/handlers.js", "suite/public/js/ff_integration.bundle.js", "suite/public/js/file.js"],
-      "project": ["realtime/**/*.js", "suite/public/js/**/*.{js,ts,vue}", "suite/meet/type-policy/**/*.mjs"],
+      "project": ["realtime/**/*.js", "suite/public/js/**/*.{js,ts,vue}", "suite/suite_meet/type-policy/**/*.mjs"],
       "github-actions": false
     },
     "frontend": {
@@ -40,11 +40,11 @@
       ],
       "playwright": {"config": ["{drive-backed-apps,meet}/playwright.config.ts"]}
     },
-    "suite/meet/sfu-server": {
+    "suite/suite_meet/sfu-server": {
       "entry": ["src/server/RecordingGrantPersistenceFile.ts"],
       "project": ["src/**/*.ts", "scripts/**/*.js"]
     },
-    "suite/meet/recorder-server": {
+    "suite/suite_meet/recorder-server": {
       "entry": ["src/integration/*.integration.ts"],
       "project": ["src/**/*.ts"]
     },

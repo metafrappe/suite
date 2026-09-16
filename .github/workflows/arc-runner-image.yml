@@ -16,8 +16,8 @@ on:
       - "frontend/package.json"
       - "e2e/package.json"
       - "e2e/yarn.lock"
-      - "suite/meet/sfu-server/package.json"
-      - "suite/meet/sfu-server/yarn.lock"
+      - "suite/suite_meet/sfu-server/package.json"
+      - "suite/suite_meet/sfu-server/yarn.lock"
   pull_request:
     paths:
       - ".github/arc/runner/Dockerfile"
@@ -31,8 +31,8 @@ on:
       - "frontend/package.json"
       - "e2e/package.json"
       - "e2e/yarn.lock"
-      - "suite/meet/sfu-server/package.json"
-      - "suite/meet/sfu-server/yarn.lock"
+      - "suite/suite_meet/sfu-server/package.json"
+      - "suite/suite_meet/sfu-server/yarn.lock"
   workflow_dispatch:
     inputs:
       benchmark:

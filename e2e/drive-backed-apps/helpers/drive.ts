@@ -18,7 +18,7 @@ export async function driveEntities(
 	request: APIRequestContext,
 	parent?: string,
 ): Promise<DriveEntity[]> {
-	const response = await request.get("/api/method/suite.drive.api.list.files", {
+	const response = await request.get("/api/method/suite.suite_drive.api.list.files", {
 		params: parent ? { entity_name: parent } : undefined,
 	});
 	return frappeData<DriveEntity[]>(response);
@@ -61,7 +61,7 @@ export async function getDriveEntity(
 	entityName: string,
 ): Promise<DriveEntityPermissions> {
 	const response = await request.get(
-		"/api/method/suite.drive.api.permissions.get_entity_with_permissions",
+		"/api/method/suite.suite_drive.api.permissions.get_entity_with_permissions",
 		{ params: { entity_name: entityName } },
 	);
 	return frappeData<DriveEntityPermissions>(response);
@@ -97,7 +97,7 @@ export async function shareCurrentEntity(
 	await Promise.all([
 		page.waitForResponse(
 			(response) =>
-				response.url().includes("suite.drive.api.files.update_access") &&
+				response.url().includes("suite.suite_drive.api.files.update_access") &&
 				response.ok(),
 		),
 		dialog.getByRole("button", { name: "Invite" }).click(),
@@ -110,7 +110,7 @@ export async function setDriveAccess(
 	user: string,
 ): Promise<void> {
 	const response = await request.post(
-		"/api/method/suite.drive.api.files.update_access",
+		"/api/method/suite.suite_drive.api.files.update_access",
 		{
 			form: {
 				entity_name: entityName,

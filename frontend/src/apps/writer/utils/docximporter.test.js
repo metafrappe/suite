@@ -306,7 +306,7 @@ describe('importDocx', () => {
 
     await importDocx(fakeFile('sample.docx'), { editor: { value: editor }, currentFileId: 'file-1' })
 
-    expect(callMock).toHaveBeenCalledWith('suite.drive.api.files.delete_entities', {
+    expect(callMock).toHaveBeenCalledWith('suite.suite_drive.api.files.delete_entities', {
       entity_names: ['embed-1'],
     })
     expect(toastMock.error).toHaveBeenCalled()

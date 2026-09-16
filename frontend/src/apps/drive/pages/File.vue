@@ -120,11 +120,11 @@ const onSuccess = async (entity) => {
 onUnmounted(() => clearCrumbEntity(props.entityName))
 
 const trackVisit = createResource({
-  url: 'suite.drive.api.files.track_visit',
+  url: 'suite.suite_drive.api.files.track_visit',
 })
 
 const file = createResource({
-  url: 'suite.drive.api.permissions.get_entity_with_permissions',
+  url: 'suite.suite_drive.api.permissions.get_entity_with_permissions',
   params: { entity_name: props.entityName },
   transform(entity) {
     setActiveEntity(entity)

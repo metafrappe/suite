@@ -82,7 +82,7 @@ jobs:
               fi
             fi
             backend_paths="$(printf '%s\n' "$changed_files" \
-              | grep -Ev '^(suite/sheets/collab-server/|suite/meet/sfu-server/|suite/meet/recorder-server/|suite/meet/types/)' \
+              | grep -Ev '^(suite/sheets/collab-server/|suite/suite_meet/sfu-server/|suite/suite_meet/recorder-server/|suite/suite_meet/types/)' \
               | grep -E '^(suite/|pyproject\.toml|\.github/scripts/|\.github/workflows/suite-ci\.yml)' || true)"
             [ -n "$backend_paths" ] && run_backend=1 || run_backend=0
           fi
@@ -224,8 +224,8 @@ jobs:
             changed_files="$(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.sha }}")"
             printf '%s\n' "$changed_files" | grep -Eq '^(realtime/|\.github/workflows/suite-ci\.yml)' && run_realtime=1 || run_realtime=0
             printf '%s\n' "$changed_files" | grep -Eq '^(suite/sheets/collab-server/|\.github/workflows/suite-ci\.yml)' && run_sheets=1 || run_sheets=0
-            printf '%s\n' "$changed_files" | grep -Eq '^(suite/meet/sfu-server/|suite/meet/types/|\.github/workflows/suite-ci\.yml)' && run_meet=1 || run_meet=0
-            printf '%s\n' "$changed_files" | grep -Eq '^(suite/meet/recorder-server/|suite/meet/types/|\.github/workflows/suite-ci\.yml)' && run_recorder=1 || run_recorder=0
+            printf '%s\n' "$changed_files" | grep -Eq '^(suite/suite_meet/sfu-server/|suite/suite_meet/types/|\.github/workflows/suite-ci\.yml)' && run_meet=1 || run_meet=0
+            printf '%s\n' "$changed_files" | grep -Eq '^(suite/suite_meet/recorder-server/|suite/suite_meet/types/|\.github/workflows/suite-ci\.yml)' && run_recorder=1 || run_recorder=0
           else
             if [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
               changed_files="$(git diff --name-only HEAD~1 HEAD)"
@@ -234,8 +234,8 @@ jobs:
             fi
             printf '%s\n' "$changed_files" | grep -Eq '^(realtime/|\.github/workflows/suite-ci\.yml)' && run_realtime=1 || run_realtime=0
             printf '%s\n' "$changed_files" | grep -Eq '^(suite/sheets/collab-server/|\.github/workflows/suite-ci\.yml)' && run_sheets=1 || run_sheets=0
-            printf '%s\n' "$changed_files" | grep -Eq '^(suite/meet/sfu-server/|suite/meet/types/|\.github/workflows/suite-ci\.yml)' && run_meet=1 || run_meet=0
-            printf '%s\n' "$changed_files" | grep -Eq '^(suite/meet/recorder-server/|suite/meet/types/|\.github/workflows/suite-ci\.yml)' && run_recorder=1 || run_recorder=0
+            printf '%s\n' "$changed_files" | grep -Eq '^(suite/suite_meet/sfu-server/|suite/suite_meet/types/|\.github/workflows/suite-ci\.yml)' && run_meet=1 || run_meet=0
+            printf '%s\n' "$changed_files" | grep -Eq '^(suite/suite_meet/recorder-server/|suite/suite_meet/types/|\.github/workflows/suite-ci\.yml)' && run_recorder=1 || run_recorder=0
           fi
 
           echo "run_realtime=$run_realtime" >> $GITHUB_OUTPUT
@@ -275,7 +275,7 @@ jobs:
 
       - name: Run Meet SFU Server Tests
         if: always() && steps.node-server-changes.outputs.run_meet == '1'
-        working-directory: suite/meet/sfu-server
+        working-directory: suite/suite_meet/sfu-server
         run: |
           yarn install --frozen-lockfile
           mkdir -p test-results
@@ -289,7 +289,7 @@ jobs:
 
       - name: Run Meet Recorder Server Tests
         if: always() && steps.node-server-changes.outputs.run_recorder == '1'
-        working-directory: suite/meet/recorder-server
+        working-directory: suite/suite_meet/recorder-server
         run: |
           yarn install --frozen-lockfile
           mkdir -p test-results
@@ -299,7 +299,7 @@ jobs:
 
       - name: Run Meet Recorder Integration Tests
         if: always() && (github.event_name == 'schedule' || inputs.run_recorder_integration) && steps.node-server-changes.outputs.run_recorder == '1'
-        working-directory: suite/meet/recorder-server
+        working-directory: suite/suite_meet/recorder-server
         run: yarn test:integration
 
       - name: Upload Node Servers Evidence
@@ -309,9 +309,9 @@ jobs:
           name: suite-node-servers-evidence
           path: |
             test-results/
-            suite/meet/sfu-server/test-results/
-            suite/meet/recorder-server/test-results/
-            suite/meet/recorder-server/integration/output/
+            suite/suite_meet/sfu-server/test-results/
+            suite/suite_meet/recorder-server/test-results/
+            suite/suite_meet/recorder-server/integration/output/
           if-no-files-found: warn
           retention-days: 30
 

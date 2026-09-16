@@ -99,7 +99,7 @@ watch(onlyUnread, (newValue) => {
 })
 
 const notifications = createResource({
-  url: 'suite.drive.api.notifications.get_notifications',
+  url: 'suite.suite_drive.api.notifications.get_notifications',
   auto: true,
   params: {
     only_unread: onlyUnread.value,
@@ -113,7 +113,7 @@ const notifications = createResource({
 })
 
 const markAsRead = createResource({
-  url: 'suite.drive.api.notifications.mark_as_read',
+  url: 'suite.suite_drive.api.notifications.mark_as_read',
   auto: false,
   method: 'POST',
   params: {

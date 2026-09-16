@@ -9,7 +9,7 @@ import { getSocket } from '@/apps/drive/socket'
 
 export function entitiesDownload(entities, transfer = false) {
   if (entities.length === 1 && !entities[0].is_folder) {
-    window.location.href = `/api/method/suite.drive.api.files.get_file_content?entity_name=${
+    window.location.href = `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${
       entities[0].name
     }&trigger_download=1${transfer ? '&transfer=1' : ''}`
     return
@@ -22,7 +22,7 @@ async function prepareArchive(entities) {
   const names = JSON.stringify(entities.map((entity) => entity.name))
   let token
   try {
-    ;({ token } = await call('suite.drive.api.files.download_folder', { entities: names }))
+    ;({ token } = await call('suite.suite_drive.api.files.download_folder', { entities: names }))
   } catch (error) {
     toast.error(error?.message || 'Download failed')
     return
@@ -40,7 +40,7 @@ async function prepareArchive(entities) {
     return // toast.promise already rendered the error toast in place
   }
 
-  window.location.href = `/api/method/suite.drive.api.files.download_archive?token=${encodeURIComponent(
+  window.location.href = `/api/method/suite.suite_drive.api.files.download_archive?token=${encodeURIComponent(
     token
   )}`
 }
@@ -73,7 +73,7 @@ function waitForArchive(token, { timeout = 70 * 60 * 1000 } = {}) {
 
     // covers the build finishing between the enqueue call and this listener
     // attaching, and the (rare) case the socket drops the event entirely
-    call('suite.drive.api.files.download_status', { token })
+    call('suite.suite_drive.api.files.download_status', { token })
       .then((res) => {
         if (res.status === 'ready' || res.status === 'failed') settle(res)
       })

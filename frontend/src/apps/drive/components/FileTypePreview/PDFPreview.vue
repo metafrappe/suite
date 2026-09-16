@@ -36,7 +36,7 @@ const isMobile = breakpoints.smaller('sm')
 
 const props = defineProps({ previewEntity: Object })
 const src = computed(
-  () => `/api/method/suite.drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`
+  () => `/api/method/suite.suite_drive.api.files.get_file_content?entity_name=${props.previewEntity.name}`
 )
 
 const canvasRef = ref(null)

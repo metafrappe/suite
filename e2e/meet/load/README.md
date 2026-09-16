@@ -92,7 +92,7 @@ The focused Recorder Endpoint measurement uses the existing containerized record
 integration service because recorder capture requires Linux Xvfb and PulseAudio:
 
 ```bash
-yarn --cwd suite/meet/recorder-server measure:recorder
+yarn --cwd suite/suite_meet/recorder-server measure:recorder
 ```
 
 It starts only Compose-owned SFU and recorder integration containers, uses an

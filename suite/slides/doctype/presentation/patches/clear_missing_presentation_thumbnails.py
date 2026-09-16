@@ -31,7 +31,7 @@ def is_dangling(file_url: str) -> bool:
     attach hook only rebuilds a thumbnail it cannot find a File for — so a surviving
     row is reason enough to leave the field alone. Only once no row is left does the
     on-disk check decide, and by then the URL can only be a local framework blob:
-    Drive rewrites S3-backed files to the `suite.drive.api.s3.fetch` prefix, which
+    Drive rewrites S3-backed files to the `suite.suite_drive.api.s3.fetch` prefix, which
     get_disk_path() does not resolve.
     """
     variants = get_url_variants(file_url)

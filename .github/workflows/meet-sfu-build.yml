@@ -5,8 +5,8 @@ on:
     branches:
       - develop
     paths:
-      - "suite/meet/sfu-server/**"
-      - "suite/meet/types/**"
+      - "suite/suite_meet/sfu-server/**"
+      - "suite/suite_meet/types/**"
       - ".github/workflows/meet-sfu-build.yml"
   workflow_dispatch:
     inputs:
@@ -17,7 +17,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: frappe/suite/meet-sfu-server
+  IMAGE_NAME: frappe/suite/suite_meet-sfu-server
 
 jobs:
   build-and-push:
@@ -54,8 +54,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: suite/meet
-          file: suite/meet/sfu-server/Dockerfile
+          context: suite/suite_meet
+          file: suite/suite_meet/sfu-server/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

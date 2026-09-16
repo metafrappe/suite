@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type {
 	RecorderStageProjectionEvent,
 	RecorderStageSnapshot,
-} from "../../suite/meet/types";
+} from "../../suite/suite_meet/types";
 import { RecorderStageProjection } from "./RecorderStageProjection";
 
 const at = (second: number) =>

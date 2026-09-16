@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 import type {
 	RecorderStageProjectionEvent,
 	RecorderStageSnapshot,
-} from "../../suite/meet/types";
+} from "../../suite/suite_meet/types";
 import type { Participant } from "../src/apps/meet/utils/media/ParticipantManager";
 import type {
 	RecorderParticipantData,

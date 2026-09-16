@@ -172,7 +172,7 @@ onMounted(() => {
 const guestNameInputRef = ref<VideoElement | null>(null);
 
 const joinGuestAPI = useCall({
-	url: "/api/v2/method/suite.meet.api.meeting.join_meeting_as_guest",
+	url: "/api/v2/method/suite.suite_meet.api.meeting.join_meeting_as_guest",
 	method: "POST",
 	immediate: false,
 	params: () => {

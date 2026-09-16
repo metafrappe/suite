@@ -6,9 +6,9 @@ describe("getErrorMessage", () => {
 		expect(
 			getErrorMessage(
 				new Error(
-					"Login to access <strong>suite.meet.api.meeting.join_meeting</strong>.",
+					"Login to access <strong>suite.suite_meet.api.meeting.join_meeting</strong>.",
 				),
 			),
-		).toBe("Login to access suite.meet.api.meeting.join_meeting.");
+		).toBe("Login to access suite.suite_meet.api.meeting.join_meeting.");
 	});
 });

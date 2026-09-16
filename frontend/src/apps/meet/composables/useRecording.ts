@@ -62,23 +62,23 @@ export function useRecording(meetingId: string) {
 	}
 
 	const stateCall = useCall<RecordingState | null, { meeting_id: string }>({
-		url: "/api/v2/method/suite.meet.api.recording.get_state",
+		url: "/api/v2/method/suite.suite_meet.api.recording.get_state",
 		immediate: false,
 	});
 	const preflightCall = useCall<RecordingPreflight, { meeting_id: string }>({
-		url: "/api/v2/method/suite.meet.api.recording.get_preflight",
+		url: "/api/v2/method/suite.suite_meet.api.recording.get_preflight",
 		immediate: false,
 	});
 	const startCall = useCall<
 		RecordingStartResult,
 		{ meeting_id: string; request_id: string }
 	>({
-		url: "/api/v2/method/suite.meet.api.recording.start",
+		url: "/api/v2/method/suite.suite_meet.api.recording.start",
 		method: "POST",
 		immediate: false,
 	});
 	const stopCall = useCall<RecordingCommandResult | null, { meeting_id: string }>({
-		url: "/api/v2/method/suite.meet.api.recording.stop",
+		url: "/api/v2/method/suite.suite_meet.api.recording.stop",
 		method: "POST",
 		immediate: false,
 	});

@@ -8,7 +8,7 @@ import frappe
 import pycrdt
 from frappe.model.document import Document
 
-from suite.drive.api.notifications import create_notification, get_link
+from suite.suite_drive.api.notifications import create_notification, get_link
 
 COLLISION_ERRORS = (
     frappe.exceptions.QueryDeadlockError,

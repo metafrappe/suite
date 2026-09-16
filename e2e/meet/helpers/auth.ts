@@ -11,7 +11,7 @@ export async function provisionMeetHost(
 	request: APIRequestContext,
 ): Promise<void> {
 	const response = await request.post(
-		"/api/v2/method/suite.meet.api.test_helpers.provision_host",
+		"/api/v2/method/suite.suite_meet.api.test_helpers.provision_host",
 	);
 	if (!response.ok()) {
 		throw new Error(

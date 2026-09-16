@@ -44,7 +44,7 @@ test("moves a file into a nested shared folder with inherited reader access", as
 	await Promise.all([
 		owner.page.waitForResponse(
 			(response) =>
-				response.url().includes("suite.drive.api.files.move") && response.ok(),
+				response.url().includes("suite.suite_drive.api.files.move") && response.ok(),
 		),
 		owner.page
 			.getByTestId(`drive-entity-${file.name}`)

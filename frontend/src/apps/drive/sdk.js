@@ -20,4 +20,4 @@ export {
 
 /** The Drive File (with the caller's access) backing a content document. */
 export const getFileForDoc = (doctype, docname) =>
-  call('suite.drive.overrides.file.get_file_for_doc', { doctype, docname })
+  call('suite.suite_drive.overrides.file.get_file_for_doc', { doctype, docname })

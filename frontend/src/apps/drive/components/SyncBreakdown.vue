@@ -97,12 +97,12 @@ function convertToArray(nodeObj) {
 const tree = computed(() => preview.data && buildTree(preview.data))
 
 const preview = createResource({
-  url: 'suite.drive.api.scripts.sync_preview',
+  url: 'suite.suite_drive.api.scripts.sync_preview',
   cache: 'preview',
 })
 preview.submit()
 const syncFromDisk = createResource({
-  url: 'suite.drive.api.scripts.sync_from_disk',
+  url: 'suite.suite_drive.api.scripts.sync_from_disk',
   beforeSubmit: () => {
     toast('Starting syncing.', {
       icon: LucideFolderSync,

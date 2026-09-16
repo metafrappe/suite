@@ -39,7 +39,7 @@ export function useMeetingPreviewPresence(meetingId: string) {
 	};
 
 	const fetchPresenceToken = useCall<PresenceTokenResponse, { meeting_id: string }>({
-		url: "/api/v2/method/suite.meet.api.meeting.get_sfu_presence_preview_token",
+		url: "/api/v2/method/suite.suite_meet.api.meeting.get_sfu_presence_preview_token",
 		immediate: false,
 		onSuccess(data: PresenceTokenResponse) {
 			if (data.restricted_preview) {

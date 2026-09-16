@@ -7,7 +7,7 @@ import type {
 	RecordingProjectionSnapshotResponse,
 	RecordingProofChallenge,
 	RecordingProofResponse,
-} from "../../suite/meet/types";
+} from "../../suite/suite_meet/types";
 
 interface RecorderParticipantUserData {
 	name?: string;

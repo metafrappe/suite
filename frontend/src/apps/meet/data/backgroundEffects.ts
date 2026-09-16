@@ -113,22 +113,22 @@ export const availableBackgroundImages: BackgroundImage[] = [
 	{
 		name: "beach",
 		label: "Beach",
-		url: "/assets/suite/meet/frontend/backgrounds/beach.webp",
+		url: "/assets/suite/suite_meet/frontend/backgrounds/beach.webp",
 	},
 	{
 		name: "mountains",
 		label: "Mountains",
-		url: "/assets/suite/meet/frontend/backgrounds/mountains.webp",
+		url: "/assets/suite/suite_meet/frontend/backgrounds/mountains.webp",
 	},
 	{
 		name: "space",
 		label: "Earth & Moon",
-		url: "/assets/suite/meet/frontend/backgrounds/earth-and-moon.webp",
+		url: "/assets/suite/suite_meet/frontend/backgrounds/earth-and-moon.webp",
 	},
 	{
 		name: "saturn",
 		label: "Saturn",
-		url: "/assets/suite/meet/frontend/backgrounds/saturn.webp",
+		url: "/assets/suite/suite_meet/frontend/backgrounds/saturn.webp",
 	},
 ];
 

@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user",
+ "creation": "2025-04-24 17:38:30.853130",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_section",
+  "user",
+  "account_column_break",
+  "user_folder",
+  "quota",
+  "preferences_section",
+  "auto_detect_links",
+  "preferences_column_break",
+  "webdav_enabled",
+  "writer_section",
+  "writer_settings"
+ ],
+ "fields": [
+  {
+   "description": "Who these settings belong to, plus the admin-managed storage details.",
+   "fieldname": "account_section",
+   "fieldtype": "Section Break",
+   "label": "Account"
+  },
+  {
+   "description": "The user these settings belong to \u2014 the document is named after them.",
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "account_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "File entity backing this user's Home folder; created automatically on first use. Only admins may change it.",
+   "fieldname": "user_folder",
+   "fieldtype": "Link",
+   "label": "User Folder",
+   "options": "File",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "Storage quota override for this user (in megabytes). 0 falls back to the site default. Only admins may change it.",
+   "fieldname": "quota",
+   "fieldtype": "Int",
+   "label": "Quota"
+  },
+  {
+   "description": "Personal Drive behavior; each user manages their own.",
+   "fieldname": "preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Preferences"
+  },
+  {
+   "default": "0",
+   "description": "Watch the clipboard for copied URLs and offer to add them to Drive as links.",
+   "fieldname": "auto_detect_links",
+   "fieldtype": "Check",
+   "label": "Auto Detect Links"
+  },
+  {
+   "fieldname": "preferences_column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Let WebDAV clients access my files when WebDAV is enabled on this site. Off until you turn it on.",
+   "fieldname": "webdav_enabled",
+   "fieldtype": "Check",
+   "label": "Allow WebDAV Access"
+  },
+  {
+   "description": "Per-user editor preferences maintained by the Writer app.",
+   "fieldname": "writer_section",
+   "fieldtype": "Section Break",
+   "label": "Writer"
+  },
+  {
+   "default": "{\"font_family\":\"inter\",\"font_size\":\"15\",\"line_height\":\"1.5\", \"versioning\": 5}",
+   "description": "Font, size, line height and version cadence used by Writer documents.",
+   "fieldname": "writer_settings",
+   "fieldtype": "JSON",
+   "label": "Writer Settings"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-31 09:41:00.812051",
+ "modified_by": "Administrator",
+ "module": "Suite Drive",
+ "name": "Drive Settings",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Suite User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

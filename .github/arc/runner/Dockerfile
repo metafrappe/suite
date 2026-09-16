@@ -12,7 +12,7 @@ RUN corepack enable && corepack prepare yarn@1.22.22 --activate
 COPY package.json yarn.lock root/
 COPY frontend/package.json root/frontend/
 COPY e2e/package.json e2e/yarn.lock e2e/
-COPY suite/meet/sfu-server/package.json suite/meet/sfu-server/yarn.lock sfu/
+COPY suite/suite_meet/sfu-server/package.json suite/suite_meet/sfu-server/yarn.lock sfu/
 
 RUN yarn config set yarn-offline-mirror /tmp/suite-yarn-mirror \
     && yarn --cwd root install --frozen-lockfile --ignore-scripts --non-interactive --production=false \

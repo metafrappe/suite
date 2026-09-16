@@ -14,12 +14,12 @@
     "test:realtime": "node --test realtime/*.test.js",
     "knip:e2e": "knip --workspace e2e",
     "knip:frontend": "knip --workspace frontend",
-    "knip:recorder-server": "knip --workspace suite/meet/recorder-server",
-    "knip:sfu-server": "knip --workspace suite/meet/sfu-server",
+    "knip:recorder-server": "knip --workspace suite/suite_meet/recorder-server",
+    "knip:sfu-server": "knip --workspace suite/suite_meet/sfu-server",
     "knip:sheets-collab": "knip --workspace suite/sheets/collab-server",
     "knip": "knip",
-    "check:meet-types": "node suite/meet/type-policy/check.mjs",
-    "test:meet-type-policy": "node --test suite/meet/type-policy/check.test.mjs"
+    "check:meet-types": "node suite/suite_meet/type-policy/check.mjs",
+    "test:meet-type-policy": "node --test suite/suite_meet/type-policy/check.test.mjs"
   },
   "resolutions": {
     "@tiptap/core": "3.26.0",

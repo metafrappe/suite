@@ -1,6 +1,6 @@
 files:
-  - source: /suite/drive/locale/main.pot
-    translation: /suite/drive/locale/%two_letters_code%.po
+  - source: /suite/suite_drive/locale/main.pot
+    translation: /suite/suite_drive/locale/%two_letters_code%.po
   - source: /suite/mail/locale/main.pot
     translation: /suite/mail/locale/%two_letters_code%.po
 pull_request_title: "chore: sync translations from crowdin"

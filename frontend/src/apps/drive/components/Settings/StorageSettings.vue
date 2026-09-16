@@ -79,7 +79,7 @@ const usedSpace = ref(0)
 const spaceLimit = ref(0)
 
 const storageBreakdown = createResource({
-  url: 'suite.drive.api.storage.storage_breakdown',
+  url: 'suite.suite_drive.api.storage.storage_breakdown',
   onSuccess(data) {
     const res = {}
     usedSpace.value = 0

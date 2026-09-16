@@ -123,7 +123,7 @@ test("renaming the current folder updates its crumb", async ({ owner, run }) => 
 	await Promise.all([
 		page.waitForResponse(
 			(response) =>
-				response.url().includes("suite.drive.api.files.rename") &&
+				response.url().includes("suite.suite_drive.api.files.rename") &&
 				response.ok(),
 		),
 		input.press("Enter"),
@@ -166,7 +166,7 @@ test("moving the current folder updates its trail without a reload", async ({
 	await Promise.all([
 		page.waitForResponse(
 			(response) =>
-				response.url().includes("suite.drive.api.files.move") && response.ok(),
+				response.url().includes("suite.suite_drive.api.files.move") && response.ok(),
 		),
 		dialog.getByRole("button", { name: "Move", exact: true }).click(),
 	]);

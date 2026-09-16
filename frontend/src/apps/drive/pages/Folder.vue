@@ -34,7 +34,7 @@ watch(
 
 const getFolderContents = createResource({
   ...COMMON_OPTIONS,
-  url: 'suite.drive.api.list.files',
+  url: 'suite.suite_drive.api.list.files',
   makeParams: (params) => ({
     ...params,
     entity_name: props.entityName,
@@ -55,7 +55,7 @@ onUnmounted(() => clearCrumbEntity(props.entityName))
 const entityName = computed(() => props.entityName)
 /** Permissions + metadata for the folder in the URL — not global state. */
 const folder = createResource({
-  url: 'suite.drive.api.permissions.get_entity_with_permissions',
+  url: 'suite.suite_drive.api.permissions.get_entity_with_permissions',
   transform(entity) {
     return prettyData([entity])[0]
   },

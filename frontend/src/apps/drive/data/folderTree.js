@@ -22,7 +22,7 @@ async function fetchChildren(name, sortOrder) {
   let rows = []
   try {
     const data = await frappeRequest({
-      url: '/api/method/suite.drive.api.list.files',
+      url: '/api/method/suite.suite_drive.api.list.files',
       method: 'GET',
       params: {
         team: '',

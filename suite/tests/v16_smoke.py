@@ -28,7 +28,7 @@ def run_unittests(module):
 
 def check_suite():
     from suite.writer.api import docs
-    from suite.suite_core.boot import before_install
+    from suite.suite_core.boot import before_install, before_app_install
     payload = b'---\ntitle: Demo\n---\n# Hello\n\n**World**\n\n[[Example]]'
     result = {}
     with patch.object(docs, 'FileManager') as manager:
@@ -45,3 +45,7 @@ def check_suite():
     from frappe.modules.utils import get_module_app
     assert get_module_app('Suite Drive') == 'suite'
     assert get_module_app('Suite Meet') == 'suite'
+    for standalone in ['drive', 'meet']:
+        try: before_app_install(standalone)
+        except frappe.ValidationError: pass
+        else: raise AssertionError('Standalone apps must not replace Suite modules on the same site')

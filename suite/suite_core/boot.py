@@ -50,6 +50,12 @@ def before_install():
         )
 
 
+def before_app_install(app_name):
+    """Keep the standalone-app exclusion valid in both installation orders."""
+    if app_name in CONSOLIDATED_STANDALONE_APPS:
+        frappe.throw(_("This site already uses Frappe Suite. Install {0} on a separate site.").format(app_name))
+
+
 def _run(label, func, *args, **kwargs):
     """Log a labeled error for the failing handler, then let it propagate."""
     try:

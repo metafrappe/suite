@@ -330,6 +330,7 @@ scheduler_events = {
 # former app's handler is preserved and invoked in order.
 # ============================================================================
 before_install = "suite.suite_core.boot.before_install"
+before_app_install = "suite.suite_core.boot.before_app_install"
 after_install = "suite.suite_core.boot.after_install"
 after_migrate = "suite.suite_core.boot.after_migrate"
 after_app_install = "suite.suite_core.boot.after_app_install"
